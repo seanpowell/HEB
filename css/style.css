@@ -265,23 +265,38 @@ header a:hover {
 	opacity: 0.8;
 }
 
-#one {background: url(../images/first_sec.png) repeat;}
+#one {background: url(../images/bg_one.png) repeat;}
 
 #mainpage {background: url(../images/desk_man.png) no-repeat; background-position: bottom; height: 755px;}
 
-#f1 {background: url(../images/first_sec_bot.png) repeat-x; height:81px;}
+header {
+	background: transparent url(../images/nav_elope.png) no-repeat; 
+	height: 144px;
+	width: 921px;
+	margin-left: auto;
+	margin-right: auto;
+	-moz-box-shadow: 0px 0px 5px 5px #666;
+	-webkit-box-shadow: 0px 0px 5px 5px #666;
+	box-shadow: 0px 0px 5px 5px #666;
+	-moz-border-bottom-right-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
 
-header {background: url(../images/nav_velope.png) no-repeat; height: 144px;}
+#f1 {background: url(../images/bg_one_bot) repeat-x; height:100px;}
 
-#two {background: url(../images/mid_sec.png) repeat;}
+#two {background: url(../images/bg_two.png) repeat;}
 
 #two_contain {
 	background: url(../images/notes.png) no-repeat 640px 170px;
 }
 
-#f2 {background: url(../images/mid_sec_bot.png) repeat-x; height:78px; margin-top: 20px;}
+#f2 {background: url(../images/bg_two_bot.png) repeat-x; height:100px; margin-top: 20px;}
 
-#three {background: url(../images/bot_sec.png) repeat;}
+#three {background: url(../images/bg_three.png) repeat;}
 
 #preso {background: url(../images/proj.png) no-repeat; background-position: bottom; height: 677px;}
 
@@ -364,8 +379,8 @@ section {
 }
 
 #site_footer {
-	background: transparent url(../images/footer_top.png) repeat-x;
-	height: 81px;
+	background: transparent url(../images/bg_three_bot.png) repeat-x;
+	height: 91px;
 }
 
 #site_footer_wrapper {
