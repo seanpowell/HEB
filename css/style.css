@@ -1,3 +1,5 @@
+/* @override http://localhost/email/css/style.css */
+
 /* 
   HTML5 ✰ Boilerplate 
   
@@ -221,21 +223,177 @@ button {  width: auto; overflow: visible; }
 
 
  /* Primary Styles
-    Author: 
+    Author: Sean Powell
  */
+@font-face {
+        	font-family: 'MuseoSlab500';
+			src: url('../fonts/museo_slab_500-webfont.eot');
+			src: local('☺'), url('../fonts/museo_slab_500-webfont.woff') format('woff'), url('../fonts/museo_slab_500-webfont.ttf') format('truetype'), url('../fonts/museo_slab_500-webfont.svg#webfont7KPZ5b3g') format('svg');
+	font-weight: normal;
+	font-style: normal;}
+
+body, li, div {
+	font-family: 'MuseoSlab500';
+} 
+
+h1, h2, h3, h4 {
+	font-family: 'MuseoSlab500';
+	font-weight: normal;
+	font-style: normal;
+} 
+
+h1 {
+	font-size: 110px;
+	display: inline;
+	float: left;
+}
+
+h2 {
+	font-size: 70px;
+	text-align:center;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+header a {
+	text-decoration: none;
+}
+
+header a:hover {
+	opacity: 0.8;
+}
+
+#one {background: url(../images/first_sec.png) repeat;}
+
+#mainpage {background: url(../images/desk_man.png) no-repeat; background-position: bottom; height: 755px;}
+
+#f1 {background: url(../images/first_sec_bot.png) repeat-x; height:81px;}
+
+header {background: url(../images/nav_velope.png) no-repeat; height: 144px;}
+
+#two {background: url(../images/mid_sec.png) repeat;}
+
+#two_contain {
+	background: url(../images/notes.png) no-repeat 640px 170px;
+}
+
+#f2 {background: url(../images/mid_sec_bot.png) repeat-x; height:78px; margin-top: 20px;}
+
+#three {background: url(../images/bot_sec.png) repeat;}
+
+#preso {background: url(../images/proj.png) no-repeat; background-position: bottom; height: 677px;}
+
+.nav {
+	position: relative;
+	top: 100px;
+	font-size: 18px;
+}
+
+#main_copy {
+	position: relative;
+	top: 450px;
+	color: #ffffff;
+	font-size: 18px;
+}
+
+section {
+	background-color: #b1bbb4;
+	padding: 15px;
+}
+
+#dont {
+	font-size: 28px;
+	color: #ffffff;
+	margin-top: 30px;
+}
+
+#scroll-pane { float:left;overflow: auto; width: 550px; height:800px;position:relative;border:1px solid gray;display:inline}
+
+#scroll-content {position:absolute;top:0;left:0;  width: 90%;}
+
+.scroll-content-item {background-color:#fcfcfc;color:#003366;float:left;margin:10px;font-size:3em;line-height:96px;text-align:center;border:1px solid gray;display:block;}
 
 
+#slider-wrap{float:left;background-color:#5d6668;width:6px; margin:0 0 0 330px;}
+
+#slider-vertical{position:relative;height:100%}
+
+.ui-slider-handle{background: transparent url(../images/slider.png) no-repeat; width: 21px; height:23px; display: block; position: absolute; margin-left: -8px; }
+
+#code-side {
+	float: left;
+	display: inline;
+	width: 330px;
+	margin: 25px 0 0 10px;
+	color: #e0e2e3;
+}
 
 
+#about_us {
+	position: fixed;
+	top: 200px;
+	right: -1px;
+}
 
+#about_rib {
+	background: transparent url(../images/about_out.png) no-repeat;
+	width: 125px;
+	height: 100px;
+	position: fixed;
+	top: 200px;
+	right: -1px;
+	
+}
 
+#about_expand {
+	background: transparent url(../images/about_out.png) no-repeat;
+	width: 582px;
+	height: 335px;
+	position: fixed;
+	top: 200px;
+	right: -1px;
+	display: none;
+}
 
+.about_copy {
+	position: relative;
+	left: 150px;
+	top: 25px;
+}
 
+#site_footer {
+	background: transparent url(../images/footer_top.png) repeat-x;
+	height: 81px;
+}
 
+#site_footer_wrapper {
+	background: transparent url(../images/footer_main.png) repeat;
+	display: block;
+	float: left;
+	width: 100%;
+}
 
+.footer_text {
+	float: left;
+	display: inline;
+	width: 50%;
+	padding: 0 50px 50px 70px;
+	color: #c3cbcd;
+}
 
+#share {
+	width: 30%;
+	float: right;	
+}
 
-
+#share_text {
+	color: #b8c2b9;;
+	font-size: 16px;
+	float: left;
+	margin-top: 12px;
+}
 
 
 /*
