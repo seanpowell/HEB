@@ -1,4 +1,7 @@
-/* @override http://localhost/email/css/style.css */
+/* @override 
+	http://localhost/email/css/style.css
+	http://htmlemailboilerplate.com/css/style.css
+*/
 
 /* 
   HTML5 ✰ Boilerplate 
@@ -288,15 +291,19 @@ header {
 
 #f1 {background: url(../images/bg_one_bot) repeat-x; height:100px;}
 
-#two {background: url(../images/bg_two.png) repeat;}
+#two {
+	background: url(../images/bg_two.png) repeat;
+	padding-top: 70px;
+}
 
 #two_contain {
 	background: url(../images/notes.png) no-repeat 640px 170px;
+	padding-bottom: 30px;
 }
 
 #f2 {background: url(../images/bg_two_bot.png) repeat-x; height:100px; margin-top: 20px;}
 
-#three {background: url(../images/bg_three.png) repeat;}
+#three {background: url(../images/bg_three.png) repeat; padding-top: 30px;}
 
 #preso {background: url(../images/proj.png) no-repeat; background-position: bottom; height: 677px;}
 
