@@ -305,7 +305,7 @@ header {
 
 #three {background: url(../images/bg_three.png) repeat; padding-top: 30px;}
 
-#preso {background: url(../images/proj.png) no-repeat; background-position: bottom; height: 677px;}
+#preso {background: url(../images/proj.png) no-repeat; background-position: bottom; height: 677px; margin-left: 50px;}
 
 .nav {
 	position: relative;
