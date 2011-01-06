@@ -281,15 +281,16 @@ header {
 	-moz-box-shadow: 0px 0px 5px 5px #666;
 	-webkit-box-shadow: 0px 0px 5px 5px #666;
 	box-shadow: 0px 0px 5px 5px #666;
-	-moz-border-bottom-right-radius: 5px;
-	-moz-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
+	
 }
 
-#f1 {background: url(../images/bg_one_bot) repeat-x; height:100px;}
+#f1 {background: url(../images/bg_one_bot.png) repeat-x; height:100px;}
 
 #two {
 	background: url(../images/bg_two.png) repeat;
