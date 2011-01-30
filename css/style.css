@@ -89,7 +89,8 @@ select, input, textarea, button { font:99% sans-serif; }
 /* normalize monospace sizing 
  * en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome
  */
-pre, code, kbd, samp { font-family: monospace, sans-serif; }
+pre, code, kbd, samp { 
+font-family: monospace, sans-serif; }
  
 
 /* 
@@ -239,6 +240,14 @@ body, li, div {
 	font-family: 'MuseoSlab500';
 } 
 
+li {
+	list-style-type: lower-roman;
+	margin: 0;
+	padding: 0;
+	opacity: 1;
+	list-style-position: inside;
+}
+
 h1, h2, h3, h4 {
 	font-family: 'MuseoSlab500';
 	font-weight: normal;
@@ -270,7 +279,7 @@ header a:hover {
 
 #one {background: url(../images/bg_one.png) repeat;}
 
-#mainpage {background: url(../images/desk_man.png) no-repeat; background-position: bottom; height: 755px;}
+#mainpage {background: url(../images/desk_man.png) no-repeat; background-position: -40px; height: 730px;}
 
 header {
 	background: transparent url(../images/nav_elope.png) no-repeat; 
@@ -300,6 +309,8 @@ header {
 #two_contain {
 	background: url(../images/notes.png) no-repeat 640px 170px;
 	padding-bottom: 30px;
+	position: relative;
+	z-index: 1000;
 }
 
 #f2 {background: url(../images/bg_two_bot.png) repeat-x; height:100px; margin-top: 20px;}
@@ -316,13 +327,20 @@ header {
 
 #main_copy {
 	position: relative;
-	top: 450px;
+	top: 325px;
+	left: 520px;
 	color: #ffffff;
-	font-size: 18px;
+	font-size: 16px;
+	width: 335px;
+	text-align: justify;
+	line-height: 22px;
+}
+
+#main_copy m {
+	color: #e3a63e;
 }
 
 section {
-	background-color: #b1bbb4;
 	padding: 15px;
 }
 
@@ -332,32 +350,84 @@ section {
 	margin-top: 30px;
 }
 
-#scroll-pane { float:left;overflow: auto; width: 550px; height:800px;position:relative;border:1px solid gray;display:inline}
-
-#scroll-content {position:absolute;top:0;left:0;  width: 90%;}
-
-.scroll-content-item {background-color:#fcfcfc;color:#003366;float:left;margin:10px;font-size:3em;line-height:96px;text-align:center;border:1px solid gray;display:block;}
-
-
-#slider-wrap{float:left;background-color:#5d6668;width:6px; margin:0 0 0 330px;}
-
-#slider-vertical{position:relative;height:100%}
-
-.ui-slider-handle{background: transparent url(../images/slider.png) no-repeat; width: 21px; height:23px; display: block; position: absolute; margin-left: -8px; }
-
 #code-side {
 	float: left;
 	display: inline;
 	width: 330px;
 	margin: 25px 0 0 10px;
 	color: #e0e2e3;
+	line-height: 20px;
 }
+
+#scroll-pane { float:left; width: 860px; height: 800px;position:relative;display:inline; 
+}
+
+#scroll-content {position:relative;top:0;left:0;  width: 100%;
+}
+
+#slider-wrap{float:left;background-color:#5d6668;width:6px; margin:0 0 0 0px;}
+
+#slider-vertical{position:relative;height:100%}
+
+.ui-slider-handle{background: transparent url(../images/slider.png) no-repeat; width: 21px; height:23px; display: block; position: absolute; margin-left: -8px; }
+
+pre {
+	display: block;
+	width: 520px;
+	background-color: #b1bbb4;
+	padding: 10px;
+	border-right-style: solid;
+	border-right-color: gray;
+	white-space: pre-wrap;
+}
+
+pre div {
+	font-family: monospace, sans-serif;
+}
+
+.ex_one {
+	width: 860px;
+	font-family: monospace, sans-serif;
+}
+
+.snip {
+	border-right: 5px solid #e3a63e;
+	width: 515px;
+	float: left;
+	margin-right: 30px;
+	padding-right:  10px;
+	/**background: transparent url(../images/orange.gif) no-repeat scroll 550px center;**/
+}
+
+.snip:hover {
+	background-color: #ded6b3;
+	margin-left: -10px;
+	padding-left: 10px;
+}
+
+/*.notepad {
+	background: transparent url(../images/notepad.png) no-repeat;
+	width: 258px;
+	height: 192px;
+	padding-top: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-top: -40px;
+	line-height: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 2000;
+}*/
 
 
 #about_us {
 	position: fixed;
 	top: 200px;
 	right: -1px;
+	z-index: 3000;
 }
 
 #about_rib {
@@ -378,12 +448,16 @@ section {
 	top: 200px;
 	right: -1px;
 	display: none;
+	z-index: 1;
 }
 
 .about_copy {
 	position: relative;
 	left: 150px;
 	top: 25px;
+	width: 65%;
+	margin-bottom: 1em;
+	line-height: 1.5;
 }
 
 #site_footer {
@@ -417,7 +491,6 @@ section {
 	float: left;
 	margin-top: 12px;
 }
-
 
 /*
  * Media queries for responsive design
@@ -461,4 +534,3 @@ section {
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
 }
-

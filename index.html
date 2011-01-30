@@ -36,126 +36,140 @@
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-1.6.min.js"></script>
-
 </head>
 
-<body> 
+<body>
+    <div id="note1" class="notepad">Using the xHTML doctype seems best when sending HTML email. 
+       More info/Reference: 
+       <ul><li><a href="http://www.campaignmonitor.com/blog/post/3317/correct-doctype-to-use-in-html-email/">Campaign Monitor</a></li><li><a href="http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_sheep_of_html_email_design">Email on Acid</a></li></ul>
+       </div>
+<!-- end note 1 --> 
 <div id="site_container">     
    <div id="one">
        <div class="container_12"> 
         <header>
+        	<nav>
             <div class="nav grid_4 push_1">
             <span style="color: grey;">HTML EMAIL</span> <span style="color: black;">BOILERPLATE</span>  <span style="color: #a11414; font-size: smaller">v.01</span>
             </div>
-            <div class="nav grid_4 push_4">
-                <a href="#f2"><span style="color: #838d8f;">WORKSHOP</span></a> | <a href="#f1"><span style="color:#a11414">THE CODE</span></a>
+            <div class="nav grid_4 push_3">
+                <a href="#f2"><span style="color: #96ca2d;">NTC11</span> <span style="color: #838d8f;">WORKSHOP</span></a> | <a href="#f1"><span style="color:#a11414">THE CODE</span></a>
             </div>
+            </nav>
             
        </header>
         <section id="mainpage">
             <div id ="main_copy" class="grid_5 push_7">
-                <p>Something here...</p>
+                Welcome to the HTML <em>Email</em> Boilerplate site. This website and <a href="#f1">its sample code</a>
+                 creates a template of sorts, absent of design or layout, that will help you avoid some of the major rendering problems with the most common email clients out there &mdash; Gmail, Outlook, Yahoo Mail, Lotus Notes, etc. <m>While not a plug and play layout (ergo, you will have to do some work ;-), it will provide some helpful examples and snippets that will keep your design rendering as true-to-form as possible.</m>
             </div>
-            <!-- .grid_8 push_4 -->
+            <!-- .grid_5 push_4 -->
         </section>    
         
        </div> 
-           <!-- end container -->
+       <!-- end container -->
          <footer id="f1">
              
          </footer>
-     </div> 
+  </div>
      <!-- end one -->
-     <div class="clear"></div> 
+     
+     <div class="clearfix"></div> 
+     
      <div id="two"> 
          <div class="container_12" id="two_contain"> 
              <h1><span style="color:#b8c2b9;">THE</span> <span style="color:black;">CODE</span></h1>
              <div id="code-side">The meat of the project lies here in the Code section.  Feel free to copy and paste as necessary.  Click on the different code sections for more information on each snippet.</div>  
-             <section class="grid_12" id="scroll-pane">
-             <div id="scroll-content" class="grid_12">
-               <h4>Email HTML for getting started:</h4>
-               <ul>
-                 <li>Google gmail image fix display block</li>
-                 <li>Yahoo paragraph fix</li>
-                 <li>tips: inline styling</li>
-                 <li>margin issues with outlook 2007</li>
-                 <li>background images with outlook 2007/gmail from campaign monitor: http://www.campaignmonitor.com/blog/post/3363/updated-applying-a-background-image-to-html-email/</li>
-                 <li>link color span for yahoo mail</li>
-                 <li>spacer image cdn on google, transparent</li>
-                 <li>alignment without float</li>
-                 <li>helvetica not supported</li>
-                 <li>special chars - friends of the establishment</li>
-                 <li>font-type (cool)</li>
-                 <li>gradients and rounded corners</li>
-                 <li>images for rounded corners? at least format</li>
-                 <li>things that degrade nicely?</li>
-                 <li>hard width and height for tables, images, td's etc</li>
-                 <li>not supported list</li>
-                 <li>thoughts on resets</li>
-                 <li>hotmail green headings (all headings become a different color)</li>
-                 <li>Tools of the trade: premailer, litmus, emailonacid</li>
-                 <li>Nested tables</li>
-                 <li>usable images: png issue with lotus notes</li>
-                 <li>Doctype issue: http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_sheep_of_html_email_design</li>
-                 <li>Mobile font size issue
-                     <code> style type="text/css"
-                     div, p, a, li, td { -webkit-text-size-adjust:none; }
-                     /style</code>
-                http://www.campaignmonitor.com/blog/post/3339/save-your-layout-by-overriding-the-minimum-font-size-on-the-iphone-and/
-                     *note* see comments - maybe an @media declaration set needed for mobile
-                     http://www.campaignmonitor.com/blog/post/3163/optimizing-your-emails-for-mobile-devices-with-media/
-                 </li>
-                 <li>common font declarations and where they should be</li>    
-               </ul>
-          <h4>Things to fix/to do</h4>
-          <ul>
-            <li>shuffle cards with tips (flashcards)</li>
-            <li>big code block</li>
-            <li>code snippet drag and drop (both two and fro)</li>
-            <s><li>Jquery ui</li></s>
-            <li>Jquery mobile</li>
-            <s><li>960 gs</li></s>
-            <li>git hub</li>
-            <li>ipad version</li>
-            <li>get share buttons to work</li>
-            <li>mouseover links - site red</li>
-            <li>mouseover about - bounce</li>
-            <li>screen modals for more code information, sending email?</li>
-            <li>add notepad</li>
-            <li>add code snippet indicators</li>
-            <li>add comments - disqus?</li>
-            <li>Update 404 page</li>
-            <li>need favicon</li>
-            <li>need creative commons license and imagery</li>
-            <li>use box shadow for envelope</li>
-          </ul>
-           <h4>Resources/urls/citations</h4>
-           <ul>
-             <li>http://www.creativeglo.co.uk/blog/email-design/guide-to-coding-html-emails/</li>
-             <li>http://www.email-standards.org/</li>
-             <li>http://www.html5rocks.com/</li>
-             <li>html5boilerplate.com</li>
-             <li>campaignmonitor.com
-             <li></li>
-           </ul>
-           <h4>HTML5 things to try</h4>
-             <ul>
-               <li>local storage - maybe drag and drop the code? make your own notes?</li>
-               <li>geolocation tagging</li>
-               <li>video (degrade?)</li>
-               <li>ajaxy stuff (not really html5)</li>
-               <li>ipad/iphone layout</li>
-               <li>modenizr http://www.modernizr.com/</li>
-               <li>on page notes for offline storage (local)</li>
-               <li>use the &lt; aside &gt; for the about? definitely for the code notes and examples</li>
-               <li>Cache "manifest"?</li>
-             </ul>
-           </div>
-         </section>
-         
-         <div class="clear"></div>
+             <section id="scroll-pane">
+                 <div id="scroll-content">
+<pre>
+********************************************************
+********************************************************
+
+HOW TO USE: All Header styles should/can be converted inline (necessary) using your email service provider's toolset or many of the ones found on the web.
+
+********************************************************  
+********************************************************
+<div class="ex_one">
+<div class="snip" id="snip_one">&lt;!-- 
+Using the xHTML doctype seems best when sending HTML email. 
+More info/Reference: 
+Campaign Monitor - http://www.campaignmonitor.com/blog/post/3317/correct-doctype-to-use-in-html-email/
+Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_sheep_of_html_email_design
+--&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+</div>
+</div>
+<!-- end ex_one -->
+
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+&lt;title&gt;Your Message Subject or Title&lt;/title&gt;
+&lt;style type="text/css"&gt;
+<div class="ex_two">
+<div class="snip" id="snip_two">
+/** Hotmail header color reset:  Replace #000 (black) with your color. The !important is really what is overriding Hotmail's styling.  This is just a way to reset Hotmail to black.  If you have a specific color in mind for your headers than you still need to produce inline styles in that color for Gmail.  In fact, this will work the same inline with the !important declaration.  This way makes it clean and super easy for a tool to move the style inline.  If you need an inline styling tool, check out: http://premailer.dialect.ca/. 
+**/
+h1, h2, h3, h4 {
+   color: #000 !important;
+}
+</div>
+</div>
+<!-- end ex_one -->
+
+/** Yahoo link color reset (fix #1 of 2): This fix is from Brian Thies over at Campaign Monitor. Not uniform across clients. still have to set link color inline for gmail.  More info: http://www.campaignmonitor.com/blog/post/3226/two-solutions-to-yahoo-mail-turning-all-your-links-blue/ **/
+a { color: #980; text-decoration: underline;} /** Yahoo Classic and other clients that support styling within the HEAD tags **/
+.yshortcuts { color: #980 !important; text-decoration: underline !important;} /* Body text color for the New Yahoo */
+.yshortcuts a span { color: #980 !important; text-decoration: underline !important; } /* Link text color for the New Yahoo */
+
+/** BONUS: Adaptation of Brian Thies link color fix to render the Yahoo Short Cuts invisible.  You need to make the text color the same of the actual font color of your email and then set text-underline to none.**/
+.yshortcuts { color: #000 !important; text-decoration: underline !important;} /* Body text color for the New Yahoo */
+.yshortcuts a span { color: #000 !important; text-decoration: underline !important; } /* Link text color for the New Yahoo */
+
+/** Yahoo paragraph tag fix: removes the proper spacing or the paragraph (p) tag.  To correct we set the top/bottom margin to 1em in the head of the document. Simple fix with little effect on other styling.  NOTE: 1em or 1.12 em http://www.w3.org/TR/CSS21/sample.html**/
+p {
+   margin: 1em 0;
+   /** wonder if inherited font styles will fix outlook 2007 issue **/
+   font-style: inherit;
+} 
+/** Fix for image spacing in Gmail and Hotmail.**/
+img {
+   display: block;
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div&gt;
+&lt;p&gt;&lt;a href="http://www.intuitive.com/coolweb/entities.html" title="Character Entities" target="_blank"&gt;Here is a listing of character entities for easy reference...&lt;/a&gt;&lt;/p&gt;
+&lt;!-- Fix number 2 of 2 for the Yahoo Link color reset: Simply override the styling color and decoration inline.  Do not use in combination with fix number 1 unless you want to style the yshortcuts separately, which this code allows you to do. (I prefer this method.)--&gt;
+&lt;p&gt;&lt;a href="http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html" style="color:#980; text-decoration:none;"&gt;&lt;span style="color:#980;"&gt;Here is another fix for Yahoo from Responsys/Smith Harmon&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;&lt;img src="" alt="Spacer Here" style="display: block;" /&gt;Spacer image here: http://....&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;need image display block for gmail issue&lt;/p&gt;
+&lt;p&gt;Fort Collins&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;p&gt;need cool background image solution from campaign monitor&lt;/p&gt;
+&lt;/div&gt;         
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+                 </div> 
+                 <!-- end scroll-content -->
+             </section>
+             <!-- end scroll pane section -->
+               
+         <div class="clearfix"></div>
          </div> 
         <!-- end container --> 
+        
          
          <footer id="f2">
              
@@ -167,7 +181,7 @@
         <h2 class="grid_12"><span style="color:#b8c2b9;">Email Design</span> <span style="color:black;">Workshop</span></h2>
         <div class="grid_2"><img src="images/aka.png" style="float:right;" alt="AKA" /></div><div class="grid_10" id="dont">Don’t Let Bad Email Code Ruin Your Day or Your Results
         </div>
-        <div class="clear"></div>    
+        <div class="clearfix"></div>    
         <div id="preso" class="grid_9 push_1">     
           
         </div>
@@ -175,15 +189,17 @@
         
         </div>
        <!-- end container -->
-        <div class="clear"></div>
+        <div class="clearfix"></div>
        <div id="site_footer"></div>
         <footer>
             <div id="site_footer_wrapper">
             <div class="footer_text">
             <p>Creative Commons goes here: The Engage Group</p>
-            <p>Site beautification by Tae Design, elbowed into submission by Sean Powell, and nursed back to health with the love of Shana Masterson.</p>
+            <p>Site beautification by Tae Design, elbowed into submission by Sean Powell, and nursed back to health with the love of Shana Masterson.  This site was built using <a href="http://html5boilerplate.com">Paul Irish's HTML5 Boilerplate</a> and hosted in the clouds by <a href="http://rackspacecloud.com">Rackspace</a>.</p>
             <p>Only works on a moz/webkit browser that supports html5.</p>
-            <p>Special thanks: Shana Masterson, Debbie Young, Vikki Salvatoriello, Paul Irish, Textmate, Zen coding, Shana, designer, Email Standards, Campaign Monitor, and others...</p></div>
+            <p>Special thanks: Shana Masterson, Debbie Young, Vikki Salvatoriello, Paul Irish, Textmate, Zen coding, Shana, designer, Email Standards, Campaign Monitor, and others...</p>
+            <p>Inspiration and extra special thanks goes to Paul Irish and his kick-butt <a href="http://html5boilerplate.com">HTML5 boilerplate</a>.</p>
+            </div>
             <div id="share">
                 <div id="share_text">The good stuff:</div>
                     <div id="share_images">
@@ -205,10 +221,16 @@
 
    <div id="about_us">
         <div id="about_rib"></div>
-        <div id="about_expand"><div class="about_copy">Something here</div></div>
+        <div id="about_expand"><div class="about_copy">This site was created to actually put <strong>pen to paper some of ours (and our friends') experiences when it comes to rendering html email</strong>.  We thought, hey, how great would it be to use a cool new technology, like HTML5, to showcase some of the pitfalls of an older (rendering-wise) technology - in this case, email clients like Outlook, Gmail, Hotmail, etc.</div>  
+        <div class="about_copy">We also thought, hey (which is for horses and sometimes cows), why don't we use <a href="">Paul Irish's HTML5 Boilerplate</a> (thanks for the inspiration Paul) as our starting point.  And after a little love, peace, and html grease this site came to be.</div>
+        <div class="about_copy"><a href="#">A revisionist's history...</a>
+        </div>
+        <div class="about_copy">Sean @The Engage Group</a>
+        </div>
+        </div>
+        <!-- end about_expand -->
    </div>
    <!-- end about_us -->
-
 </div>
 <!-- end site container -->
 
@@ -216,12 +238,13 @@
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.min.js"%3E%3C/script%3E'))</script>
   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"></script>
   <script src="js/libs/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/libs/vertical.slider.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/libs/jquery.qtip-1.0.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/mylibs/animate.script.js" type="text/javascript" charset="utf-8"></script>
-  
+
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
