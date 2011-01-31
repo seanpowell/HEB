@@ -480,6 +480,11 @@ pre div {
 	color: #c3cbcd;
 }
 
+footer a {
+	color: #7a0c0c;
+	text-decoration: none;
+}
+
 #share {
 	width: 30%;
 	float: right;	
