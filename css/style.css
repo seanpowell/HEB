@@ -485,6 +485,11 @@ footer a {
 	text-decoration: none;
 }
 
+footer a:visited {
+	color: #a81415;
+	text-decoration: none;
+}
+
 #share {
 	width: 30%;
 	float: right;	
