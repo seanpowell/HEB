@@ -15,7 +15,11 @@ $(function(){
 	// 	});
 	
 	$('#snip_one').qtip ({
-		content: '<div id="snipone">this is the content</div>',
+		content: '<div id="note1" class="notepad">Using the xHTML doctype seems best when sending HTML email. 
+	       More info/Reference: 
+	       <ul><li><a href="http://www.campaignmonitor.com/blog/post/3317/correct-doctype-to-use-in-html-email/">Campaign Monitor</a></li><li><a href="http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_sheep_of_html_email_design">Email on Acid</a></li></ul>
+	       </div>
+	<!-- end note 1 -->',
 		show: 'mouseover',
 		hide: 'mouseout',
 		style: {
