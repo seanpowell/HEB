@@ -33,7 +33,7 @@
 
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
- 
+
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-1.6.min.js"></script>
 </head>
@@ -77,15 +77,16 @@
              <div id="code-side">The meat of the project lies here in the Code section.  Feel free to copy and paste as necessary.  Click on the different code sections for more information on each snippet.</div>  
              <section id="scroll-pane">
                  <div id="scroll-content">
-<pre>
-    &lt;!-- ***************************************************
+<code class="highlight">
+&lt;!--
+********************************************************
 ********************************************************
 
-HOW TO USE: Use these code examples as a guideline for formatting your email properly.  You may want to create your own template based on these snippets or just pick and choose the ones that fix your specific rendering issue(s).  Remember, all header styles can (and for the most part should) be converted inline using your email service provider's toolset; or you can use many of the ones found on the web. DO NOT COPY OVER COMMENTS AND INSTRUCTIONS WITH THE CODE or suffer a spam trap you will :).
+HOW TO USE: Use these code examples as a guideline for formatting your email properly.  You may want to create your own template based on these snippets or just pick and choose the ones that fix your specific rendering issue(s).  Remember, all header styles can (and for the most part should) be converted inline using your email service provider's toolset; or you can use many of the ones found on the web. DO NOT COPY OVER COMMENTS AND INSTRUCTIONS WITH THE CODE to your message or risk banishment to the spam box :).
 
 ********************************************************  
-**************************************************** --&gt;
-
+********************************************************
+--&gt;
 &lt;!-- 
 Using the xHTML doctype seems best when sending HTML email. 
 More info/Reference: 
@@ -170,7 +171,14 @@ display: block;
 &lt;/div&gt;         
 &lt;/body&gt;
 &lt;/html&gt;
-</pre>
+
+
+
+
+
+
+
+</code>
 
                  </div> 
                  <!-- end scroll-content -->
@@ -206,7 +214,7 @@ display: block;
             <div id="site_footer_wrapper">
             <div class="footer_text">
             <p>Creative Commons goes here: The Engage Group</p>
-            <p>Site beautification by Tae Design, elbowed into submission by Sean Powell, and nursed back to health with the love of Shana Masterson.  This site was built using the fantabulous <a href="http://html5boilerplate.com">Paul Irish's HTML5 Boilerplate</a>, the ever easy-peasy <a href="http://www.jquery.com">Jquery</a>, and hosted in the clouds by <a href="http://rackspacecloud.com">Rackspace</a>.</p>
+            <p>Site beautification by Tae Design, elbowed into submission by Sean Powell, and nursed back to health with the love of Shana Masterson.  This site was built using the fantabulous <a href="http://html5boilerplate.com">Paul Irish's HTML5 Boilerplate</a>, the ever easy-peasy <a href="http://www.jquery.com">Jquery</a>, and hoisted up to the clouds by <a href="http://rackspacecloud.com">Rackspace</a>.</p>
             <p>Only works on a moz/webkit browser that supports html5.</p>
             <p>Special thanks: Shana Masterson, Debbie Young, Vikki Salvatoriello, Email Standards Project, MailChimp, Campaign Monitor, Email On Acid, Tae Design, and others...</p>
             </div>
@@ -250,11 +258,16 @@ display: block;
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.min.js"%3E%3C/script%3E'))</script>
   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"></script>
+  <!-- Include jQuery Syntax Highlighter --> 
+  <script type="text/javascript" src="http://github.com/balupton/jquery-syntaxhighlighter/raw/master/scripts/jquery.syntaxhighlighter.min.js"></script>
+  <!-- Initialise jQuery Syntax Highlighter --> 
+  <script type="text/javascript">$.SyntaxHighlighter.init();</script>--> 
+  
   <script src="js/libs/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/libs/vertical.slider.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/libs/jquery.qtip-1.0.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/mylibs/animate.script.js" type="text/javascript" charset="utf-8"></script>
-
+ 
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>

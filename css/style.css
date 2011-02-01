@@ -359,26 +359,32 @@ section {
 	line-height: 20px;
 }
 
-#scroll-pane { float:left; width: 860px; height: 800px;position:relative;display:inline; 
+#scroll-pane { float:left; width: 860px; height: 800px;position:relative;display:inline; margin-left: 25px; margin-right: auto;
 }
 
-#scroll-content {position:relative;top:0;left:0;  width: 100%;
+#scroll-content {position:relative;
+	top:0;
+	left:0;  
+	width: 100%;
 }
 
 #slider-wrap{float:left;background-color:#5d6668;width:6px; margin:0 0 0 0px;}
 
-#slider-vertical{position:relative;height:100%}
+#slider-vertical{position:relative; height:100%;}
 
 .ui-slider-handle{background: transparent url(../images/slider.png) no-repeat; width: 21px; height:23px; display: block; position: absolute; margin-left: -8px; }
 
-pre {
+pre,code {
 	display: block;
-	width: 520px;
-	background-color: #b1bbb4;
-	padding: 10px;
-	border-right-style: solid;
-	border-right-color: gray;
+	/*width: 520px;*/
+	width: 840px !important;
+	background-color: #ddd !important;
 	white-space: pre-wrap;
+}
+
+ol.linenums {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
 }
 
 pre div {

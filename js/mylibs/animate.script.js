@@ -1,12 +1,12 @@
 $(function(){
 	
 	$(document).click(function(){
-	    $("#about_expand").hide();
+	    $("#about_expand").hide(1000);
 	});
 	
 	$("#about_us").click(function(e) {
 		e.stopPropagation(); 
-	    $("#about_expand").show();
+	    $("#about_expand").show(1000);
 	});
 	
 	// $("#snip_one").click(function(){ 
