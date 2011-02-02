@@ -508,6 +508,26 @@ footer a:visited {
 	margin-top: 12px;
 }
 
+/* Modal styling */
+
+div#Modal {
+	width: 560px;
+	position: absolute; top: 40px; left: 170px;
+	padding: 20px;
+	border: solid 1px #bbb;
+	background: #fff;
+	-webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.25);
+	-webkit-transition: -opacity 0.0s ease-out;
+}
+
+div#Modal.shown {
+	opacity: 1.0;
+	z-index: 100;
+	-webkit-transition-duration: 0.25s;
+}
+
+
+
 /*
  * Media queries for responsive design
  * These follow after primary styles so they will successfully override. 

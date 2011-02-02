@@ -1,5 +1,9 @@
-$(function(){
+$(document).ready(function() {
+	if ( !(jQuery.support.tbody) ) {
+		$("#warning").colorbox({open:true, inline:true, href:"#warning"});
+	}
 	
+	//Begin about ribbon animation script
 	$(document).click(function(){
 	    $("#about_expand").hide(1000);
 	});
@@ -8,46 +12,6 @@ $(function(){
 		e.stopPropagation(); 
 	    $("#about_expand").show(1000);
 	});
-	
-	// $("#snip_one").click(function(){ 
-	// 		var offset = $("#snip_one").offset()
-	// 		offset.left += 575;
-	// 		console.log(offset);
-	// 	    $("#note1").css({"left": + offset.left});
-	// 	    $("#note1").css({"top":  + offset.top});
-	// 		$("#note1").css({"display": "block"});
-	// 	});
-	
-	$('#snip_one').qtip ({
-		content: 'note here',
-		show: 'mouseover',
-		hide: 'mouseout',
-		style: {
-				border: 'none',
-				background: 'transparent url(images/notepad.png) no-repeat',
-				width: 278,
-				height: 242,
-		},
-		position: {
-			      corner: {
-			         target: 'rightMiddle',
-			         tooltip: 'rightMiddle'
-			      },
-				  adjust: {
-					x: 300, 
-					scroll: false
-				  }
-		},
-		show: {
-			when: { event: 'click' }
-		},
-		hide: {
-			fixed: true,
-			when: { event: 'click' }
-		},
-		tip: {
-			corner: 'topLeft'
-		}
-	})
+	// end about ribbon code
 	
 });

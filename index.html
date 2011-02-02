@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="css/960.css">
   <link rel="stylesheet" href="css/text.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/colorbox.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
@@ -38,7 +39,7 @@
   <script src="js/libs/modernizr-1.6.min.js"></script>
 </head>
 
-<body>
+<body>   
 <div id="site_container">     
    <div id="one">
        <div class="container_12"> 
@@ -78,6 +79,8 @@
              <section id="scroll-pane">
                  <div id="scroll-content">
 <code class="highlight">
+<div id="ex_one">
+<a href="flickr.com" rel="examples" class="examples">    
 &lt;!--
 ********************************************************
 ********************************************************
@@ -87,6 +90,8 @@ HOW TO USE: Use these code examples as a guideline for formatting your email pro
 ********************************************************  
 ********************************************************
 --&gt;
+</a>
+</div>
 &lt;!-- 
 Using the xHTML doctype seems best when sending HTML email. 
 More info/Reference: 
@@ -241,7 +246,7 @@ display: block;
         <div id="about_rib"></div>
         <div id="about_expand"><div class="about_copy">This site was created to actually put <strong>pen to paper some of ours (and our friends') experiences when it comes to rendering html email</strong>.  We thought, hey, how great would it be to use a cool new technology, like HTML5, to showcase some of the pitfalls of an older (rendering-wise) technology - in this case, email clients like Outlook, Gmail, Hotmail, etc.</div>  
         <div class="about_copy">We also thought, hey (which is for horses and sometimes cows), why don't we use <a href="http://html5boilerplate.com">Paul Irish's HTML5 Boilerplate</a> (thanks for the inspiration Paul) as our starting point.  And after a little love, peace, and html grease this site came to be.</div>
-        <div class="about_copy"><a href="/version02.html">A revisionist's history...</a>
+        <div class="about_copy"><a href="version02.html" rel="revision">A revisionist's history...</a>
         </div>
         <div class="about_copy">Sean @The Engage Group</a>
         </div>
@@ -252,6 +257,10 @@ display: block;
 </div>
 <!-- end site container -->
 
+<!-- begin modals section REMOVE INLINE STYLES AFTER TESTING-->
+
+    <div id="warning"> The situation here is that you're using a browser where some HTML5 and/or CSS3 elements are not supported.  Firefox, Chrome, Safari or any Webkit/Moz campatible browser will render this site correctly.</div>    
+
   <!-- Javascript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
@@ -261,18 +270,16 @@ display: block;
   <!-- Include jQuery Syntax Highlighter --> 
   <script type="text/javascript" src="http://github.com/balupton/jquery-syntaxhighlighter/raw/master/scripts/jquery.syntaxhighlighter.min.js"></script>
   <!-- Initialise jQuery Syntax Highlighter --> 
-  <script type="text/javascript">$.SyntaxHighlighter.init();</script>--> 
-  
+  <script type="text/javascript">$.SyntaxHighlighter.init();</script>
+  <script src="js/libs/jquery.colorbox-min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/libs/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/libs/vertical.slider.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/libs/jquery.qtip-1.0.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/mylibs/animate.script.js" type="text/javascript" charset="utf-8"></script>
  
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
   <!-- end concatenated and minified scripts-->
-  
   
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
