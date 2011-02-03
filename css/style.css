@@ -265,6 +265,19 @@ h2 {
 	text-align:center;
 }
 
+h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #a81415;
+	margin-bottom: 10px;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
 p {
 	margin-bottom: 1em;
 }
@@ -508,25 +521,18 @@ footer a:visited {
 	margin-top: 12px;
 }
 
-/* Modal styling */
-
-div#Modal {
-	width: 560px;
-	position: absolute; top: 40px; left: 170px;
-	padding: 20px;
-	border: solid 1px #bbb;
-	background: #fff;
-	-webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.25);
-	-webkit-transition: -opacity 0.0s ease-out;
+#colorbox .notes {
+	font-family: 'MuseoSlab500';
+	font-size: 16px;
+	padding: 10px;
+	500px;
+	overflow: hidden;
 }
 
-div#Modal.shown {
-	opacity: 1.0;
-	z-index: 100;
-	-webkit-transition-duration: 0.25s;
+.notes .highlight {
+	width: 98% !important;
+	padding: 10px;
 }
-
-
 
 /*
  * Media queries for responsive design

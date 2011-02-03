@@ -1,7 +1,13 @@
 $(document).ready(function() {
-	if ( !(jQuery.support.tbody) ) {
+	
+	//IE check and message based on HTML5 feature test - MAYBE CHANGE TO MODERNIZR TEST?
+	if ( !(Modernizr.video) ) {
 		$("#warning").colorbox({open:true, inline:true, href:"#warning"});
 	}
+	
+	$("#scroll-pane").click(function(){
+		$("a[rel='notes']").colorbox({open: true, slideshow:true, slideshowAuto: false, slideshowSpeed: 2500, current: "example {current} of {total}", width:"800px"});
+	});
 	
 	//Begin about ribbon animation script
 	$(document).click(function(){
