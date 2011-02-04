@@ -224,8 +224,6 @@ button {  width: auto; overflow: visible; }
 
 
 
-
-
  /* Primary Styles
     Author: Sean Powell
  */
@@ -533,6 +531,9 @@ footer a:visited {
 	width: 98% !important;
 	padding: 10px;
 }
+
+
+
 
 /*
  * Media queries for responsive design

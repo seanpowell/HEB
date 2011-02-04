@@ -1,0 +1,31 @@
+<div class="notes" id="note2">
+<h3>The MailChimp Reset</h3>
+<p>Perusing the awesome MC blog, I came across this great reset.  It will help with resetting some basic functions like margins and padding along with some of the pesky issues surrounding images in Gmail and Hotmail.  There is even a handy text adjuster for when an iphone chooses to increase text sizes on its own. </p>
+   <p>More info/Reference: 
+   <ul><li><a href="http://blog.mailchimp.com/" title="MailChimp Blog">Mail Chimp Blog</a></li><li><a href="https://github.com/mailchimp/Email-Blueprints" title="MailChimp Blueprints">GitHub Site for MailChimp Blueprints Templates</a></li></ul>
+</p>
+
+<code class="highlight">   
+    &lt;style type="text/css"&gt;
+
+    /***********
+     The MailChimp Reset from Fabio at MC 
+     More info and templates on Github: https://github.com/mailchimp/Email-Blueprints
+    ***********/  
+
+       /* Client-specific Styles */
+       #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
+       body{width:100% !important;} /* Force Hotmail to display emails at full width */
+       body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
+
+       /* Reset Styles */
+       body{margin:0; padding:0;}
+       img{border:none; font-size:14px; font-weight:bold; height:auto; line-height:100%; outline:none; text-decoration:none; text-transform:capitalize;} /* When brought inline, this line of css fixes Gmail/Hotmail image whitespace issue*/
+
+    /** End Mail Chimp Reset **/
+</code>
+
+<div class="examples"><h4>Before &amp; After</h4></div>
+        
+</div>
+<!-- end note -->
