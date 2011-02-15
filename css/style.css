@@ -532,7 +532,15 @@ footer a:visited {
 	padding: 10px;
 }
 
-
+#comingsoon {
+	width:  450px;
+	position: relative;
+	top: 175px;
+	left:  100px;
+	border: 3px dotted #aa0a18;
+	padding: 20px;
+	font-size: 16px;
+}
 
 
 /*

@@ -5,7 +5,7 @@ $(document).ready(function() {
 		$("#warning").colorbox({open:true, inline:true, href:"#warning"});
 	}
 	
-	$("#scroll-pane").click(function(){
+	$("#scroll-pane").dblclick(function(){
 		$("a[rel='notes']").colorbox({open: true, slideshow:true, slideshowAuto: false, slideshowSpeed: 2500, current: "example {current} of {total}", width:"800px"});
 	});
 	

@@ -1,0 +1,24 @@
+<div class="notes" id="note4">
+<h3>Yahoo Link Color Reset (1 of 2 fixes)</h3>
+<p>Yahoo link color reset (fix #1 of 2): This fix is from Brian Thies over at Campaign Monitor. It overwrites Yahoo mail's specific blue coloring on links. It, however, does not set color across email clients that ignore CSS in the HEAD tag. You will still have to set link color inline for gmail/others.  NOTE: This example sets the link color red.</p>  
+<p>More info:</p> 
+<ul>
+    <li><a href="http://www.campaignmonitor.com/blog/post/3226/two-solutions-to-yahoo-mail-turning-all-your-links-blue/">Two Solutions to Yahoo Turning Your Links Blue</a></li>
+</ul>
+
+<code class="highlight"> 
+      a { color: red; text-decoration: underline;} /** Yahoo Classic and other clients that support styling within the HEAD tags **/
+          .yshortcuts { color: red !important; text-decoration: underline !important;} /* Body text color for the New Yahoo */
+          .yshortcuts a span { color: red !important; text-decoration: underline !important; } /* Link text color for the New Yahoo */
+</code>
+<div class="examples"><h4>Before &amp; After</h4></div>
+</div>
+<!-- end note -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.min.js"%3E%3C/script%3E'))</script>
+<!-- Include jQuery Syntax Highlighter --> 
+<script src="http://github.com/balupton/jquery-syntaxhighlighter/raw/master/scripts/jquery.syntaxhighlighter.min.js"></script>
+
+<!-- Initialise jQuery Syntax Highlighter --> 
+<script type="text/javascript">$.SyntaxHighlighter.init();</script>
