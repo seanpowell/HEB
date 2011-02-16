@@ -362,12 +362,10 @@ section {
 }
 
 #code-side {
-	float: left;
-	display: inline;
-	width: 330px;
-	margin: 25px 0 0 10px;
 	color: #e0e2e3;
 	line-height: 20px;
+	margin-top: 20px;
+	
 }
 
 #scroll-pane { float:left; width: 860px; height: 800px;position:relative;display:inline; margin-left: 25px; margin-right: auto;
