@@ -236,7 +236,7 @@ button {  width: auto; overflow: visible; }
 
 /* Override 960 gs for a few outliers */
 body {
-	min-width: 1200px;
+	min-width: 1300px;
 	margin-left: auto;
 	margin-right: auto;
 }
