@@ -1,12 +1,13 @@
 $(document).ready(function() {
 	
-	//IE check and message based on HTML5 feature test - MAYBE CHANGE TO MODERNIZR TEST?
+	//IE check and message based on HTML5 feature test
 	if ( !(Modernizr.video) ) {
 		$("#warning").colorbox({open:true, inline:true, href:"#warning"});
 	}
 	
+	//Colorbox lightbox slideshow functionality
 	$("#scroll-pane").dblclick(function(){
-		$("a[rel='notes']").colorbox({open: true, slideshow:true, slideshowAuto: false, slideshowSpeed: 2500, current: "example {current} of {total}", width:"800px"});
+		$("a[rel='notes']").colorbox({open:true,slideshow:true, slideshowAuto: false, slideshowSpeed: 2500, current: "example {current} of {total}", width:"800px", returnFocus:true});
 	});
 	
 	//Begin about ribbon animation script

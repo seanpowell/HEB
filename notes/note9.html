@@ -1,13 +1,16 @@
 <div class="notes" id="note3">
-<h3>The Hotmail Header Reset</h3>
-<p>A quick fix for clearing out the green color Hotmail makes your header text (text wrapped in H2 tags or below). Remember to change the color to your preferred header color and use the "!important" declaration.</p>
+<h3>Image Spacers</h3>
+<p>Image spacers are a common way to help space (in place of setting margins or padding) your HTML email message consistently.  I have included a 1px/1px image for your own use.  Remember, most clients do not download images automatically so image spacers would add to the blank image displays of most email clients.  Don't forget to set the width and height of your (spacer) images explicitly.</p>
+<p>More info/Reference:</p>
+    <ul>
+        <li>Download a 1px by 1px transparent <a href="https://github.com/seanpowell/Email-Boilerplate/blob/master/spacer.gif">image spacer here</a>.  Or simply use the url in your own message.</a></li>
+    </ul>
 <code class="highlight">   
-	   h1, h2, h3, h4 {
-	       color: #000 !important;
-	   }
-</code>
-
-<div class="examples"><h4>Before &amp; After</h4></div>
-        
+&lt;img src="https://github.com/seanpowell/Email-Boilerplate/blob/master/spacer.gif" alt="Spacer" width="10" height="10" /&gt;
+</code> 
 </div>
 <!-- end note -->
+<!-- Include jQuery Syntax Highlighter --> 
+<script src="http://github.com/balupton/jquery-syntaxhighlighter/raw/master/scripts/jquery.syntaxhighlighter.min.js"></script>
+<!-- Initialise jQuery Syntax Highlighter --> 
+<script type="text/javascript">$.SyntaxHighlighter.init();</script>

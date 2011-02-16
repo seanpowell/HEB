@@ -1,59 +1,24 @@
-#  HTML5 Boilerplate [http://html5boilerplate.com](http://html5boilerplate.com)
+#  HTML Email Boilerplate [http://htmlemailboilerplate.com](http://htmlemailboilerplate.com)
 
 ## Changelog:
 
-### v.0.9.5 : October 25th, 2010
+### v.0.3 : February 15, 2011
 
 Major changes:
 
+#### Site
 
-#### General
-
-#### style.css
-
-#### index.html
-
-#### .htaccess
+#### Email Template
 
 [View full diff and commit history](insert my github here)
 
 
 #### Contributors
 
-
-### v.0.9.1 : August 13th, 2010
-
-[View full diff and commit history](http://github.com/paulirish/html5-boilerplate/compare/v0.9...v0.9.1)
-
-##### Thanks:
-
-### v0.9 : August 10th, 2010 - Initial release
-
-
 ## License:
-
 
 ## Summary:
 
-This is a set of files that a front-end developer can use to get started on a website, with following included:
-
-1. Cross-browser compatible (IE6, yeah we got that.)
-2. HTML5 ready. Use the new tags with certainty.
-3. Optimal caching and compression rules for grade-A performance
-4. Best practice site configuration defaults
-5. Think there's too much? The HTML5 Boilerplate is delete-key friendly. :)
-6. Mobile browser optimizations
-7. Progressive enhancement graceful degredation ........ yeah yeah we got that
-8. IE specific classes for maximum cross-browser control
-9. Want to write unit tests but lazy? A full, hooked up test suite is waiting for you.
-10. Javascript profiling.. in IE6 and IE7? Sure, no problem.
-11. Console.log nerfing so you won't break anyone by mistake.
-12. Never go wrong with your doctype or markup!
-13. An optimal print stylesheet, performance optimized
-14. iOS, Android, Opera Mobile-adaptable markup and CSS skeleton.
-15. IE6 pngfix baked in.
-16. jQuery, waiting for you
-
-## Releases 
-
-
+## Releases
+v.0.2
+v.0.1 
