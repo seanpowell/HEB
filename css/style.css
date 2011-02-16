@@ -233,6 +233,9 @@ button {  width: auto; overflow: visible; }
 			src: local('☺'), url('../fonts/museo_slab_500-webfont.woff') format('woff'), url('../fonts/museo_slab_500-webfont.ttf') format('truetype'), url('../fonts/museo_slab_500-webfont.svg#webfont7KPZ5b3g') format('svg');
 	font-weight: normal;
 	font-style: normal;}
+body {
+	min-width: 1020px;
+}
 
 body, li, div {
 	font-family: 'MuseoSlab500';
