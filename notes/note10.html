@@ -1,10 +1,9 @@
 <div class="notes" id="note3">
-<h3>The Hotmail Header Reset</h3>
-<p>A quick fix for clearing out the green color Hotmail makes your header text (text wrapped in H2 tags or below). Remember to change the color to your preferred header color and use the "!important" declaration.</p>
+<h3>BONUS: Fixing the Unwanted Yahoo Short Cut Links (Kind of)</h3>
+<p>Adaptation of Brian Thies link color fix to render the Yahoo Short Cuts invisible.  You need to make the text color the same of the actual font color of your email and then set text-underline to none.  NOTE: You then need to use the Responsys/Smith Harmon link color fix (tip #8) if you want to style your links anything other than blue.</p>
 <code class="highlight">   
-	   h1, h2, h3, h4 {
-	       color: #000 !important;
-	   }
+	  .yshortcuts { color: black !important; text-decoration: none !important;} /* Body text color for the New Yahoo.  This example sets the font to black. */
+      .yshortcuts a span { color: black !important; text-decoration: none !important; } /* Link text color for the New Yahoo.  This example sets the font to black. */
 </code>
 
 <div class="examples"><h4>Before &amp; After</h4></div>
