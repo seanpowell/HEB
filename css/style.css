@@ -381,7 +381,7 @@ section {
 #scroll-content {position:absolute;
 	top:0;
 	left:0;  
-	height: 2490px;
+	height: 2650px;
 }
 
 .scroll-content-item {background-color:#fcfcfc;color:#003366;width:100px;height:100px;float:left;margin:10px;font-size:3em;line-height:96px;text-align:center;border:1px solid gray;display:inline;}
@@ -410,44 +410,6 @@ ol.linenums {
 pre div {
 	font-family: monospace, sans-serif;
 }
-
-.ex_one {
-	width: 860px;
-	font-family: monospace, sans-serif;
-}
-
-.snip {
-	border-right: 5px solid #e3a63e;
-	width: 515px;
-	float: left;
-	margin-right: 30px;
-	padding-right:  10px;
-	/**background: transparent url(../images/orange.gif) no-repeat scroll 550px center;**/
-}
-
-.snip:hover {
-	background-color: #ded6b3;
-	margin-left: -10px;
-	padding-left: 10px;
-}
-
-/*.notepad {
-	background: transparent url(../images/notepad.png) no-repeat;
-	width: 258px;
-	height: 192px;
-	padding-top: 40px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	margin-top: -40px;
-	line-height: 30px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: none;
-	z-index: 2000;
-}*/
-
 
 #about_us {
 	position: fixed;
