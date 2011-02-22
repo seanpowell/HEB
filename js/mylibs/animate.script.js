@@ -2,7 +2,7 @@ $(document).ready(function() {
 	
 	//IE check and message based on HTML5 feature test
 	if ( !(Modernizr.video) ) {
-		$("#warning").colorbox({open:true, inline:true, href:"#warning"});
+		$("#warning").colorbox({open:true, inline:true, href:"#warning", width:"600px"});
 	}
 	
 	//Colorbox lightbox slideshow functionality

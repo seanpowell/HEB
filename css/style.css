@@ -231,8 +231,17 @@ button {  width: auto; overflow: visible; }
         	font-family: 'MuseoSlab500';
 			src: url('../fonts/museo_slab_500-webfont.eot');
 			src: local('☺'), url('../fonts/museo_slab_500-webfont.woff') format('woff'), url('../fonts/museo_slab_500-webfont.ttf') format('truetype'), url('../fonts/museo_slab_500-webfont.svg#webfont7KPZ5b3g') format('svg');
-	font-weight: normal;
-	font-style: normal;}
+			font-weight: normal;
+			font-style: normal;
+}
+	
+@font-face {
+			font-family: 'Lobster_1.3-webfont';
+			src: url('../fonts/Lobster_1.3-webfont.eot');
+			src: local('☺'), url('../fonts/Lobster_1.3-webfont.woff') format('woff'), url('../fonts/Lobster_1.3-webfont.ttf') format('truetype'), url('../fonts/Lobster_1.3-webfont.svg#webfont1MhCsZSr') format('svg');
+			font-weight: normal;
+			font-style: normal;
+}	
 
 /* Override 960 gs for a few outliers */
 body {
@@ -469,7 +478,7 @@ pre div {
 }
 
 footer a {
-	color: #7a0c0c;
+	color: #172a49;
 	text-decoration: none;
 }
 
@@ -513,6 +522,10 @@ footer a:visited {
 	font-size: 16px;
 }
 
+.notes_images img {
+	border: 10px solid #838383;
+	margin-right: 10px;
+}
 
 /*
  * Media queries for responsive design
