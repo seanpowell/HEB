@@ -390,14 +390,14 @@ section {
 #scroll-content {position:absolute;
 	top:0;
 	left:0;  
-	height: 2650px;
+	height: 2850px;
 }
 
 .scroll-content-item {background-color:#fcfcfc;color:#003366;width:100px;height:100px;float:left;margin:10px;font-size:3em;line-height:96px;text-align:center;border:1px solid gray;display:inline;}
 
 #slider-wrap{float:left;background-color:#5d6668;width:6px; margin:0 0 0 0px;}
 
-#slider-vertical{position:relative; height:130%}
+#slider-vertical{position:relative; height:115%}
 
 .ui-slider-handle{background: transparent url(../images/slider.png) no-repeat; width: 21px; height:23px; display: block; position: absolute; margin-left: -8px; }
 
