@@ -391,7 +391,7 @@ section {
 	top:0;
 	left:0;  
 	height: 2805px;
-	background-color: #ddd !important;
+	/background-color: #ddd !important;
 }
 
 .scroll-content-item {background-color:#fcfcfc;color:#003366;width:100px;height:100px;float:left;margin:10px;font-size:3em;line-height:96px;text-align:center;border:1px solid gray;display:inline;}
