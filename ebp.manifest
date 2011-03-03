@@ -4,8 +4,8 @@ CACHE MANIFEST
 
 CACHE:
 index.html
-/css/
-/images/
+# /css/
+# /images/
 
 FALLBACK:
 # Create a offline.html file

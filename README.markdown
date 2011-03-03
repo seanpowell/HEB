@@ -14,7 +14,7 @@ http://htmlemailboilerplate.com
 
 #### Email Template
 
-[View full diff and commit history]HEB
+[View full diff and commit history](HEB)
 
 
 #### Contributors
