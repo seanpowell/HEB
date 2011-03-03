@@ -14,11 +14,12 @@ http://htmlemailboilerplate.com
 
 #### Email Template
 
-[View full diff and commit history](insert my github here)
+[View full diff and commit history]HEB
 
 
 #### Contributors
 Sean Powell - sean@engageyourcause.com
+
 Shana Masterson smasterson@braintumor.org
 
 ## License:
@@ -30,6 +31,9 @@ The HTML Email Boilerplate site and its sample code creates a template of sorts,
 
 ## Releases
 v.0.4
+
 v.0.3
+
 v.0.2
+
 v.0.1 
