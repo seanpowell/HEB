@@ -2,7 +2,13 @@ CACHE MANIFEST
 
 # Build 2011-03-02
 
-CACHE
+CACHE:
 index.html
 /css/
 /images/
+
+FALLBACK:
+# Create a offline.html file
+
+NETWORK:
+*
