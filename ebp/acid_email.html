@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+    
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Your Message Subject or Title</title>
+	<style type="text/css">
+		
+		/***********
+		 2. The MailChimp Reset from Fabio Carneiro, MailChimp User Experience Design
+	     More info and templates on Github: https://github.com/mailchimp/Email-Blueprints
+	     http://www.mailchimp.com &amp; http://www.fabio-carneiro.com
+	     
+	     INLINE: Ok.
+		***********/  
+		
+		    /* Client-specific Styles */
+	        #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
+	        body{width:100% !important;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+	        body{-webkit-text-size-adjust:none; -ms-text-size-adjust:none;} /* Prevent Webkit and Windows Mobile platforms from changing default font sizes. */
+	
+	        /* Reset Styles */
+	        body{margin:0; padding:0;}
+	        img{height:auto; line-height:100%; outline:none; text-decoration:none;}
+	        #backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+	
+	    /** End Mail Chimp Reset **/ 
+	    
+		/** 3. Yahoo paragraph fix: removes the proper spacing or the paragraph (p) tag. To correct we set the top/bottom margin to 1em in the head of the document. Simple fix with little effect on other styling. You do not need to move this inline. NOTE: It is also common to use two breaks instead of the paragraph tag but I think this way is cleaner and more semantic. NOTE: Using 1em or 1.12 em based on http://www.w3.org/TR/CSS21/sample.html recommendations.
+		   
+		   INLINE: Ok.
+	   	   **/
+		   
+		   p {
+		       margin: 0 0 1.12em 0;
+		   }
+		      
+		   /** 4. Hotmail header color reset: Hotmail replaces your header color styles with a green color on H2, H3, H4, H5, and H6 tags. In this example, the color is reset to black.  Replace black with your choice of color. The !important is really what is overriding Hotmail's styling. A SIDE NOTE: Hotmail sets the H1 and H2 tags to the same size. 
+		   
+		   INLINE: Yes.
+		   **/
+		   
+		   h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited, h4, h5, h6 {
+		       color: #a81415 !important;
+		       line-height: 100% !important;
+		   }
+		   
+		   h1 {
+			   color: #000 !important;
+			   line-height: 100% !important;
+		   }
+	       	       
+	       .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none; border-bottom: none; background: none;} /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+		   
+		   
+		</style></head>
+<body>    
+	<!-- wrapper table begin   -->
+    <table cellpadding="25" cellspacing="0" border="0" id="backgroundTable">
+    <tr>
+    <td bgcolor="#666666">
+	<!-- content table begin   -->
+    <table cellpadding="10" cellspacing="0" border="0" align="center">
+    <tr>
+    <td bgcolor="white" width="450" >
+    <h1>Welcome to the EBP Test email</h1>
+    
+    <p>This email serves as a way to verify the functionality of the EBP.</p>
+    <p>In this test, we want to test that the doctype, resets, and adjustments will work together in harmony.  Hopefully, making your email coding job a little easier.</p>
+    
+    <h2>Checking link color</h2>    
+    <p><a href="http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html" style="color:red; text-decoration:none;" target ="_blank" title="Feeling Blue Over Yahoo"><span style="color:red;">Here is another fix for Yahoo from Responsys/Smith Harmon</span></a></p>
+    
+    <h2>Checking two images on top of each other</h2>    
+    <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+    <td width="200" bgcolor="black">
+    <img src="http://farm6.static.flickr.com/5057/5476589938_bddcaaf42c.jpg" alt="Your alt text" width="200" height="220" style="display:block;" />
+    </td>
+    </tr>
+    <tr>
+    <td width="200" bgcolor="black">
+    <img src="http://farm6.static.flickr.com/5019/5475991907_8edfe68b77.jpg" alt="Your alt text" width="200" height="220" style="display:block;" />
+    </td>
+    </tr>
+    <tr>
+    <td width="200" bgcolor="black">
+    <img src="http://farm6.static.flickr.com/5298/5475992049_545f2c3435.jpg" alt="Your alt text" width="200" height="220" style="display:block;" />
+    </td>
+    </tr>
+    <tr>
+    <td width="200" bgcolor="black">
+    <img src="http://farm6.static.flickr.com/5257/5476589282_655e5ff6ee.jpg" alt="Your alt text" width="200" height="220" style="display:block;" />
+    </td>
+    </tr>
+    </table>
+    <!-- end of image testing table -->
+    
+    <h3>Resources</h3>
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+        <tr><td width="350"><a href="http://premailer.dialect.ca/">For help with bringing your styling inline...</a></td><td></td></tr>
+            <tr><td width="350"><a href="http://www.intuitive.com/coolweb/entities.html" title="Character Entities" target="_blank">Here is a listing of character entities for easy reference...</a></td><td></td></tr>
+            <tr><td width="350"><a href="http://emailonacid.com">Email on Acid Inbox Testing Service</a></td><td></td></tr>
+        </tbody>
+    </table>  
+    <!-- end of resources table -->
+      
+    
+    </td>
+    </tr>
+    </table>
+    <!--    end content table-->
+    <p>Note: this is also the email used to test out the EBP.</p>
+    </td>
+    </tr>
+    </table>  
+    <!-- End of wrapper table -->
+</body>
+</html>

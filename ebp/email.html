@@ -17,18 +17,18 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
     
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Your Message Subject or Title</title>
 	<style type="text/css">
 	
 	/***********
 	 2. The MailChimp Reset from Fabio Carneiro, MailChimp User Experience Design
      More info and templates on Github: https://github.com/mailchimp/Email-Blueprints
-     http://www.mailchimp.com & http://www.fabio-carneiro.com
+     http://www.mailchimp.com &amp; http://www.fabio-carneiro.com
      
-     INLINE: Ok.
+     INLINE: Yes.
 	***********/  
 	
 	    /* Client-specific Styles */
@@ -45,19 +45,19 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
     
 	/** 3. Yahoo paragraph fix: removes the proper spacing or the paragraph (p) tag. To correct we set the top/bottom margin to 1em in the head of the document. Simple fix with little effect on other styling. You do not need to move this inline. NOTE: It is also common to use two breaks instead of the paragraph tag but I think this way is cleaner and more semantic. NOTE: Use 1em or 1.12 em http://www.w3.org/TR/CSS21/sample.html
 	   
-	   INLINE: Ok.
+	   INLINE: Yes.
    	   **/
 	   
 	   p {
-	       margin: 1em 0;
+	       margin: 0 0 1.12em 0;
 	   }
 	      
 	   /** 4. Hotmail header color reset: Hotmail replaces your header color styles with a green color on H2, H3, H4, H5, and H6 tags. In this example, the color is reset to black.  Replace black with your choice of color. The !important is really what is overriding Hotmail's styling. A SIDE NOTE: Hotmail sets the H1 and H2 tags to the same size. 
 	   
-	   INLINE: No.
+	   INLINE: Yes.
 	   **/
 	   
-	   .ExternalClass h1, .ExternalClass h2, .ExternalClass h2 a, .ExternalClass h2 a:visited, .ExternalClass h3, .ExternalClass h3 a, .ExternalClass h3 a:visited, .ExternalClass h4, .ExternalClass h5, .ExternalClass h6 {
+	   h1, h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited, h4, h5, h6 {
 	       color: black !important;
 	       line-height: 100% !important;
 	   }
@@ -69,14 +69,19 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
        INLINE: No.
        **/
        
-       .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black !important; text-decoration: none !important; border-bottom: none !important; background: none !important;} /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+       .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none; border-bottom: none; background: none;} /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
 	   
 	   
 	</style>
 </head>
 <body>
+    <!-- 5. Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
     
-    <!-- 5. Tables are the most common way to format your email consistently. Set your table widths inside cells and in most cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. -->
+    <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+    <tr>
+    <td> 
+               
+    <!-- 6. Tables are the most common way to format your email consistently. Set your table widths inside cells and in most cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. -->
     
     <table cellpadding="0" cellspacing="0" border="0">
         <tbody>
@@ -88,34 +93,19 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
         </tbody>
     </table>  
     
-    <!-- End example table-->
+    <!-- End example table -->
     
-    <!-- 6. Yahoo Link color fix: Simply override the styling color and decoration inline. -->
+    <!-- 7. Yahoo Link color fix: Simply override the styling color and decoration inline. -->
     
     <a href="http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html" style="color:red; text-decoration:none;" target ="_blank" title="Feeling Blue Over Yahoo"><span style="color:red;">Here is another fix for Yahoo from Responsys/Smith Harmon</span></a>
     
-    <!-- 7. Gmail image display fix: Gmail unwantedly adds in an extra space below images.  This can be especially painful when you putting images on top of each other or putting back together an image you spliced for formatting reasons.  Either way, use this fix to remove that space below.  Don't use this fix if you are placing your image inline with text or next to something, as it will force items (within the same content tag) to the next line. -->
+    <!-- 8. Gmail/Hotmail image display fix: Gmail and Hotmail unwantedly adds in an extra space below images when using non IE browsers.  This can be especially painful when you putting images on top of each other or putting back together an image you spliced for formatting reasons.  Either way, use this fix to remove that space below.  Don't use this fix if you are placing your image inline with text or next to something else (like another image), as it might force items (within the same content tag) to the next line. -->
     
-    <img src="image/yourimage.gif" alt="Your alt text" width="x" heigh="x" style="display:block;" />
+    <img src="image/yourimage.gif" alt="Your alt text" width="x" height="x" style="display:block;" />
     
-    <!--  A FEW GOOD RESOURCES -->
-    
-    <a herf="http://premailer.dialect.ca/">For help with bringing your styling inline...</a>
-        
-    <!-- 8. Here is a list of character entities that you can code into your message to get that em-dash, ampersand, or right double quote to render correctly. Don't take your chances copying them over from a word processor/text file. -->  
-      
-    <a href="http://www.intuitive.com/coolweb/entities.html" title="Character Entities" target="_blank">Here is a listing of character entities for easy reference...</a>
-        
-    <!-- 9. Image spacers are a common way to help space (in place of setting margins or padding) your HTML email message consistently.  I have included a 1px/1px image for your own use.  Remember, most clients do not download images automatically so image spacers would add to the blank image displays of most email clients.  Don't forget to set the width and height of your (spacer) images explicitly - and try NOT to set it to 1px by 1px if possible. -->
-        
-    <img src="https://github.com/seanpowell/Email-Boilerplate/blob/master/spacer.gif" alt="Spacer" width="10" height="10" />Spacer image located here (using GIT CDN): https://github.com/seanpowell/Email-Boilerplate/blob/master/spacer.gif
-    
-    <!-- 10. Email on Acid: A simple and cost effective solution if you need to test html emails in multiple different email clients frequently.  It was used extensively for this project.  Litmusapp.com is another similar service. -->
-    
-    <a href="http://emailonacid.com">Email on Acid Inbox Testing Service</a>
-    
-    <!-- THAT IS ALL, FOR NOW -->
-
-                
+    </td>
+    </tr>
+    </table>  
+    <!-- End of wrapper table -->
 </body>
 </html>
