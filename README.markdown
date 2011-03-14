@@ -35,7 +35,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ## Summary:
-The HTML Email Boilerplate site and its sample code creates a template of sorts, absent of design or layout, that will help you avoid some of the major rendering problems with the most common email clients out there — Gmail, Outlook, Yahoo Mail, etc. While not plug and play (you know, you'll have to do some work ;-), it will provide some helpful examples and snippets that will keep your design rendering as true-to-form as possible.
+The HTML Email Boilerplate site and its sample code creates a template of sorts, absent of design or layout, that will help you avoid some of the major rendering problems with the most common email clients out there — Gmail, Outlook, Yahoo Mail, etc. While not plug and play (you know, you'll have to do some work ;-), it will provide some helpful examples and snippets that will keep your email design rendering as true-to-form as possible.
 
 ## Releases
 v.0.4
