@@ -4,5 +4,3 @@
 # User-agent: * CHANGE BACK
 
 User-agent: *
-Disallow: /
- 
