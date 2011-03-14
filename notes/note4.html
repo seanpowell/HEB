@@ -1,18 +1,27 @@
-<div class="notes" id="note4">
-<h3>Yahoo Link Color Reset (1 of 2 fixes)</h3>
-<p>Yahoo link color reset (fix #1 of 2): This fix is from Brian Thies over at Campaign Monitor. It overwrites Yahoo mail's specific blue coloring on links. It, however, does not set color across email clients that ignore CSS in the HEAD tag. You will still have to set link color inline for gmail/others.  NOTE: This example sets the link color red.</p>  
-<p>More info:</p> 
-<ul>
-    <li><a href="http://www.campaignmonitor.com/blog/post/3226/two-solutions-to-yahoo-mail-turning-all-your-links-blue/">Two Solutions to Yahoo Turning Your Links Blue</a></li>
-</ul>
-<br />
-<code class="highlight"> 
-      a { color: red; text-decoration: underline;} /** Yahoo Classic and other clients that support styling within the HEAD tags **/
-      .yshortcuts { color: red !important; text-decoration: underline !important;} /* Body text color for the New Yahoo */
-      .yshortcuts a span { color: red !important; text-decoration: underline !important; } /* Link text color for the New Yahoo */
+<div class="notes" id="note3">
+<h3>The Hotmail Header Reset</h3>
+<p>Hotmail replaces your header color styles with a green color on H2, H3, H4, H5, and H6 tags. In this example, the color is reset to black.  Replace black with your choice of color. The !important is really what is overriding Hotmail's styling.</p> <p>NOTE: Hotmail also sets the H1 and H2 tags to the same size.</p>
+<code class="highlight">   
+	   h1, h2, h3, h4, h5, h6 {
+   	       color: black !important;
+   	       line-height: 100% !important;
+   	   }
+
+   	   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+   	       color: blue !important;
+   	   }
+
+   	   h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+      	   color: red !important; /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+      	   }
+
+   	   h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+   	       color: purple !important; /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+   	   }
 </code>
+
 <div class="examples"><h4>Before &amp; After</h4></div>
-<div class="notes_images"><img src="images/new_yahoo_link_wrong.jpg" alt="Before"><img src="images/new_yahoo_link_right.jpg" alt="After"></div>
+<div class="notes_images"><img src="images/hotmail_color_green.jpg" alt="Before" width="275" height="120"><img src="images/hotmail_color_black.jpg" alt="After"></div>        
 </div>
 <!-- end note -->
 

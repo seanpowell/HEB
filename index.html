@@ -48,8 +48,8 @@
             <div class="nav grid_4 push_1">
             <span style="color: grey;">HTML EMAIL</span> <span style="color: black;">BOILERPLATE</span>  <span style="color: #a11414; font-size: smaller">v.04</span>
             </div>
-            <div class="nav grid_4 push_3">
-                <a href="#f2"><span style="color: #96ca2d;">NTC11</span> <span style="color: #838d8f;">WORKSHOP</span></a> | <a href="#f1"><span style="color:#a11414">THE CODE</span></a>
+            <div class="nav grid_5 push_2">
+                <a href="#f1"><span style="color:#a11414">&darr; GET THE CODE &darr;</span></a> | <a href="#f2"><span style="color: #96ca2d;">NTC11</span> <span style="color: #838d8f;">WORKSHOP</span></a>
             </div>
             </nav>
             
@@ -57,7 +57,7 @@
         <section id="mainpage">
             <div id ="main_copy" class="grid_5 push_7">
                 Welcome to the HTML <em>Email</em> Boilerplate. This website and <a href="#f1">its sample code</a>
-                 creates a template of sorts, absent of design or layout, that will help you avoid some of the major rendering problems with the most common email clients out there &mdash; Gmail, Outlook, Yahoo Mail, etc. <m>While not plug and play (you know, you'll have to do some work ;-), it will provide some helpful examples and snippets that will keep your design rendering as true-to-form as possible.</m>
+                 creates a template of sorts, absent of design or layout, that will help you avoid some of the major rendering problems with the most common email clients out there &mdash; Gmail, Outlook, Yahoo Mail, etc. <m>While not plug and play (you know, you'll have to do some work ;-), it will provide some helpful examples and snippets that will keep your email design rendering as true-to-form as possible.</m>
             </div>
             <!-- .grid_5 push_4 -->
         </section>    
@@ -76,16 +76,19 @@
          <div class="container_12" id="two_contain">
              <div class="grid_8"><h1><span style="color:#b8c2b9;">THE</span> <span style="color:black;">CODE</span></h1></div>
              <div class="grid_4" id="code-side">The meat of the project lies here in the Code section.  Feel free to copy and paste as necessary.  <strong>Double click on the code section</strong> for more information on each of the snippets (in a slip-n-slideshow format).</div>
-             <div id="double" class="grid_8 push_2">Double Click Below</div>  
+             <div id="double" class="grid_9 push_2">Double Click Code Block <span class="tilde">~</span> Copy/Paste Friendly</div>  
              <section id="scroll-pane">
                  <div id="scroll-content">
+                     <div class="scroll-content-item">
 <code class="highlight">
     &lt;!-- ***************************************************
     ********************************************************
 
-    HOW TO USE: Use these code examples as a guideline for formatting your HTML email.  You may want to create your own template based on these snippets or just pick and choose the ones that fix your specific rendering issue(s).  Remember, some header styles can be converted inline using your email service provider's toolset; or you can use many of the ones found on the web. DO NOT COPY OVER COMMENTS AND INSTRUCTIONS WITH THE CODE to your message or risk spam box banishment :).
+    HOW TO USE: Use these code examples as a guideline for formatting your HTML email. You may want to create your own template based on these snippets or just pick and choose the ones that fix your specific rendering issue(s). There are two main areas in the template: 1. The header (head) area of the document. You will find global styles, where indicated, to move inline. 2. The body section contains more specific fixes and guidance to use where needed in your design.
 
-    It is important to note that not all of the styles in the header area should be brought inline. Those instances will be marked accordingly in the comments.
+    DO NOT COPY OVER COMMENTS AND INSTRUCTIONS WITH THE CODE to your message or risk spam box banishment :).
+
+    It is important to note that sometimes the styles in the header area should not be or don't need to be brought inline. Those instances will be marked accordingly in the comments.
 
     ********************************************************  
     **************************************************** --&gt;
@@ -125,36 +128,47 @@
 
         /** End Mail Chimp Reset **/ 
 
-    	/** 3. Yahoo paragraph fix: removes the proper spacing or the paragraph (p) tag. To correct we set the top/bottom margin to 1em in the head of the document. Simple fix with little effect on other styling. You do not need to move this inline. NOTE: It is also common to use two breaks instead of the paragraph tag but I think this way is cleaner and more semantic. NOTE: Use 1em or 1.12 em http://www.w3.org/TR/CSS21/sample.html
+    	/** 3. Yahoo paragraph fix: removes the proper spacing or the paragraph (p) tag. To correct we set the top/bottom margin to 1em in the head of the document. Simple fix with little effect on other styling. You do not need to move this inline. NOTE: It is also common to use two breaks instead of the paragraph tag but I think this way is cleaner and more semantic. NOTE: This example recommends 1em or 1.12 em. More info on setting web defaults: http://www.w3.org/TR/CSS21/sample.html or http://meiert.com/en/blog/20070922/user-agent-style-sheets/
 
     	   INLINE: Yes.
        	   **/
 
     	   p {
-    	       margin: 0 0 1.12em 0;
+    	       margin: 1em 0;
     	   }
 
-    	   /** 4. Hotmail header color reset: Hotmail replaces your header color styles with a green color on H2, H3, H4, H5, and H6 tags. In this example, the color is reset to black.  Replace black with your choice of color. The !important is really what is overriding Hotmail's styling. A SIDE NOTE: Hotmail sets the H1 and H2 tags to the same size. 
+    	   /** 4. Hotmail header color reset: Hotmail replaces your header color styles with a green color on H2, H3, H4, H5, and H6 tags. In this example, the color is reset to black for a non-linked header, blue for a linked header, red for an active header (limited support), and purple for a visited header (limited support).  Replace with your choice of color. The !important is really what is overriding Hotmail's styling. Hotmail also sets the H1 and H2 tags to the same size. 
 
     	   INLINE: Yes.
     	   **/
 
-    	   h1, h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited, h4, h5, h6 {
+    	   h1, h2, h3, h4, h5, h6 {
     	       color: black !important;
     	       line-height: 100% !important;
     	   }
 
-           /** BONUS: Adaptation of Brian Thies (Campaign Monitor) link color fix to render the Yahoo Short Cuts invisible. Yahoo short cuts are links that Yahoo places over certain text in your email without your knowledge.  In order to use this fix you need to make the text color the same of the actual font color of your email and reset a few elements. IMPORTANT: You then need to use the Responsys/Smith Harmon link color fix (tip #8) if you want to style your links to the color you want them to be.  If you don't, this fix will change all links to black in Yahoo.  
+    	   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    	       color: blue !important;
+    	   }
+
+    	   h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+       	       color: red !important; /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+       	   }
+
+    	   h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+    	       color: purple !important; /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+    	   }
+
+           /** BONUS: Adaptation of Brian Thies (Campaign Monitor) link color fix to render the Yahoo Short Cuts invisible. Yahoo short cuts are links that Yahoo places over certain text in your email without your knowledge.  In order to use this fix you need to make the text color the same of the actual font color of your email and reset a few elements. IMPORTANT: You then need to use the Responsys/Smith Harmon link color fix (#4) if you want to style your links to the color you want them to be.  If you don't, this fix will change all links to black in Yahoo.  
 
            If you are not worried about Yahoo's shorcuts, just remove this code.  This is not applicable for Yahoo Classic. 
 
            INLINE: No.
            **/
 
-           .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none; border-bottom: none; background: none;} /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+           .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none !important; border-bottom: none !important; background: none !important;} /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
 
-
-    	&lt;/style&gt;
+           &lt;/style&gt;
     &lt;/head&gt;
     &lt;body&gt;
         &lt;!-- 5. Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. --&gt;
@@ -166,22 +180,20 @@
         &lt;!-- 6. Tables are the most common way to format your email consistently. Set your table widths inside cells and in most cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. --&gt;
 
         &lt;table cellpadding="0" cellspacing="0" border="0"&gt;
-            &lt;tbody&gt;
             &lt;tr&gt;
                 &lt;td width="300"&gt;&lt;/td&gt;
                 &lt;td width="300"&gt;&lt;/td&gt;
                 &lt;td width="300"&gt;&lt;/td&gt;
             &lt;/tr&gt;
-            &lt;/tbody&gt;
         &lt;/table&gt;  
 
         &lt;!-- End example table --&gt;
 
         &lt;!-- 7. Yahoo Link color fix: Simply override the styling color and decoration inline. --&gt;
 
-        &lt;a href="http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html" style="color:red; text-decoration:none;" target ="_blank" title="Feeling Blue Over Yahoo"&gt;&lt;span style="color:red;"&gt;Here is another fix for Yahoo from Responsys/Smith Harmon&lt;/span&gt;&lt;/a&gt;
+        &lt;a href="http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html" style="color:red; text-decoration:none;" target ="_blank" title="Feeling Blue Over Yahoo"&gt;&lt;span style="color:red;"&gt;Here is the fix for Yahoo from Responsys/Smith Harmon&lt;/span&gt;&lt;/a&gt;
 
-        &lt;!-- 8. Gmail/Hotmail image display fix: Gmail and Hotmail unwantedly adds in an extra space below images when using non IE browsers.  This can be especially painful when you putting images on top of each other or putting back together an image you spliced for formatting reasons.  Either way, use this fix to remove that space below.  Don't use this fix if you are placing your image inline with text or next to something else (like another image), as it might force items (within the same content tag) to the next line. --&gt;
+        &lt;!-- 8. Gmail/Hotmail image display fix: Gmail and Hotmail unwantedly adds in an extra space below images when using non IE browsers.  This can be especially painful when you putting images on top of each other or putting back together an image you spliced for formatting reasons.  Either way, you can add 'style="display: block;"' to remove that space below the image.  Don't use this fix if you are placing your image inline with text or next to something else (like another image), as it might force items (within the same content tag) to the next line. --&gt;
 
         &lt;img src="image/yourimage.gif" alt="Your alt text" width="x" height="x" style="display:block;" /&gt;
 
@@ -191,12 +203,35 @@
         &lt;!-- End of wrapper table --&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-</code></div> 
+</code>
+                        </div>
+                        <!-- end scroll item-->
+                    </div> 
                  <!-- end scroll-content -->
              </section>
              <!-- end scroll pane section -->
+             <div id="disqus" class="grid_9 push_1"><div id="disqus_thread"></div>
+              <script type="text/javascript">
+                  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                  var disqus_shortname = 'hebp'; // required: replace example with your forum shortname
+
+                  // The following are highly recommended additional parameters. Remove the slashes in front to use.
+                  var disqus_identifier = 'ebp';
+                  var disqus_url = 'http://htmlemailboilerplate.com';
+
+                  /* * * DON'T EDIT BELOW THIS LINE * * */
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              </script>
+              <noscript>Please enable JavaScript to view <a href="http://disqus.com/?ref_noscript">comments.</a></noscript>
+              </div>
+              <!-- end disqus comments -->
                
          <div class="clearfix"></div>
+         
          </div> 
         <!-- end container --> 
         
@@ -286,6 +321,7 @@
 <a href="notes/note8.html" rel="notes">Note 8</a>
 <a href="notes/note9.html" rel="notes">Note 9</a>
 <a href="notes/note10.html" rel="notes">Note 10</a>
+<a href="notes/note11.html" rel="notes">Note 11</a>
 </div>      
 <!-- end notes -->   
 

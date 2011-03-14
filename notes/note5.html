@@ -1,13 +1,17 @@
 <div class="notes" id="note5">
-<h3>Yahoo Paragraph Fix</h3>
-<p>Fixes an issue with the Yahoo Email client where standard paragraph spacing is not applied (most likely due to a reset of some sort).</p>  
-<code class="highlight">   
-p {
-    margin: 1em 0;
-}
-</code>
+    <h3>Using a Wrapper/Container Table</h3>
+    <p>Use a wrapper table to control the width, height and the background color of your email. Use this approach instead of setting attributes on the body tag or on a div tag.  Add the #backgroundTable id to fix some issues with alignment and height in certain email clients.</p>
+    <code class="highlight">   
+    	   &lt;table cellpadding="0" cellspacing="0" border="0" id="backgroundTable"&gt;
+               &lt;tr&gt;
+                &lt;td&gt;
+                    ...content of email here (probably in another table :)...
+               &lt;/td&gt;
+               &lt;/tr&gt;
+           &lt;/table&gt;
+    </code>
 <div class="examples"><h4>Before &amp; After</h4></div>
-<div class="notes_images"><img src="images/yahoo_space_no.jpg" alt="Before"><img src="images/yahoo_space_yes.jpg" alt="After"></div>
+<div class="notes_images"><img src="images/new_yahoo_link_wrong.jpg" alt="Before" height="60"><img src="images/new_yahoo_link_right.jpg" alt="After" height="60"></div>
 </div>
 <!-- end note -->
 

@@ -1,12 +1,10 @@
 <div class="notes" id="note3">
-<h3>Yahoo Link Color Reset (2 of 2 fixes)</h3>
-<p>Fix number 2 of 2 for the Yahoo Link color reset: Simply override the styling color and decoration inline.  Do not use in combination with fix number 1 unless you want to style the "yshortcuts" class separately, which this code allows you to do. (I prefer this method.)</p>
+<h3>Gmail/Hotmail Image Display Fix</h3>
+<p>Gmail and Hotmail unwantedly adds in an extra space below images (typically seen when a viewer is using a non IE browser).  This can be especially painful when you putting images on top of each other or putting back together an image you spliced for formatting reasons.  Either way, you can add <strong>style="display: block;"</strong> to remove that space below the image.</p>  
+<p>Note: Don't use this fix if you are placing your image inline with text or next to something else (like another image), as it might force items (within the same content tag) to the next line.</p>
 <code class="highlight">   
-	   &lt;a href="http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html" style="color:red; text-decoration:none;"&gt;&lt;span style="color:red;"&gt;Here is another fix for Yahoo from Responsys/Smith Harmon&lt;/span&gt;&lt;/a&gt;
-</code>
-
-<div class="examples"><h4>Before &amp; After</h4></div>
-        
+	   &lt;img src="image/yourimage.gif" alt="Your alt text" width="x" height="x" style="display:block;" /&gt;
+</code>      
 </div>
 <!-- end note -->
 

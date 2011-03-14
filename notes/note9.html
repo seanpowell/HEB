@@ -1,14 +1,13 @@
 <div class="notes" id="note3">
-<h3>RESOURCE: Image Spacers</h3>
-<p>Image spacers are a common way to help space (in place of setting margins or padding) your HTML email message consistently.  I have included a 1px/1px image for your own use.  Remember, most clients do not download images automatically so image spacers would add to the blank image displays of most email clients.  Don't forget to set the width and height of your (spacer) images explicitly.</p>
-<p>More info/Reference:</p>
-    <ul>
-        <li>Download a 1px by 1px transparent <a href="https://github.com/seanpowell/Email-Boilerplate/blob/master/spacer.gif">image spacer here</a>.  Or simply use the url in your own message.</a></li>
-    </ul>
-<br />    
+<h3>BONUS: Fixing the Unwanted Yahoo Short Cut Links (Kind of)</h3>
+<p>Adaptation of Brian Thies link color fix to render the Yahoo Short Cuts invisible.  You need to make the text color the same of the actual font color of your email and then set text-underline to none. </p> 
+<p>NOTE: You then need to use the Responsys/Smith Harmon link color fix (tip #8) if you want to style your links anything other than blue.</p>
 <code class="highlight">   
-&lt;img src="https://github.com/seanpowell/Email-Boilerplate/blob/master/spacer.gif" alt="Spacer" width="10" height="10" /&gt;
-</code> 
+	  .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none !important; border-bottom: none !important; background: none !important;} /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+</code>
+
+<div class="examples"><h4>Before &amp; After</h4></div>
+        
 </div>
 <!-- end note -->
 <!-- Include jQuery Syntax Highlighter --> 

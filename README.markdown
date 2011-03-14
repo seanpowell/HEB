@@ -10,7 +10,7 @@ Major changes:
 3. Added offline storage capabilities to the site.
 
 #### Site
-http://htmlemailboilerplate.com
+[http://htmlemailboilerplate.com](http://htmlemailboilerplate.com)
 
 #### Email Template
 
@@ -20,11 +20,19 @@ http://htmlemailboilerplate.com
 #### Contributors
 Sean Powell - sean@engageyourcause.com
 
-Shana Masterson smasterson@braintumor.org
+Shana Masterson - smasterson@braintumor.org
 
 ## License:
 Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
-http://creativecommons.org/licenses/by-nc-sa/3.0/
+[http://creativecommons.org/licenses/by-nc-sa/3.0/](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 
 ## Summary:
 The HTML Email Boilerplate site and its sample code creates a template of sorts, absent of design or layout, that will help you avoid some of the major rendering problems with the most common email clients out there — Gmail, Outlook, Yahoo Mail, etc. While not plug and play (you know, you'll have to do some work ;-), it will provide some helpful examples and snippets that will keep your design rendering as true-to-form as possible.

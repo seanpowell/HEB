@@ -1,8 +1,7 @@
 /** Slider jQuery courtesy of Simon Battersby
 http://www.simonbattersby.com/blog/vertical-scrollbar-using-jquery-ui-slider/
 **/
-
-$(function() {
+$(window).load(function() {
 //change the main div to overflow-hidden as we can use the slider now
 $('#scroll-pane').css('overflow','hidden');
 
@@ -12,7 +11,8 @@ var difference = $('#scroll-content').height()-$('#scroll-pane').height();//eg i
 if(difference>0)//if the scrollbar is needed, set it up...
 {
    var proportion = difference / $('#scroll-content').height();//eg 200px/500px
-   var handleHeight = Math.round((1-proportion)*$('#scroll-pane').height());//set the proportional height - round it to make sure everything adds up correctly later on
+   //var handleHeight = Math.round((1-proportion)*$('#scroll-pane').height());//set the proportional height - round it to make sure everything adds up correctly later on
+   var handleHeight = 23;
    handleHeight -= handleHeight%2; //ensure the handle height is exactly divisible by two
 
    $("#scroll-pane").after('<\div id="slider-wrap"><\div id="slider-vertical"><\/div><\/div>');//append the necessary divs so they're only there if needed
