@@ -384,19 +384,13 @@ section {
 }
 
 #double {
-	margin: 0 uuto;
-	display: block;
-	clear: both;
+	padding-bottom: 10px;
 	font-size: 18px;
 	color: #ffeaea;
 	text-shadow: #050505 1px 1px 10px;
 	opacity: 0.29;
 	font-style: italic;
-}
-
-#double:hover {
-	color: ;
-	text-shadow: #81a6f8 0 0 0;
+	text-align: center;
 }
 
 #double span {
