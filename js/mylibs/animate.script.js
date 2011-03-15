@@ -11,13 +11,13 @@ $(document).ready(function() {
 	});
 	
 	//Begin about ribbon animation script
-	$(document).click(function(){
-	    $("#about_expand").hide(1000);
-	});
+		$(document).click(function(){
+	    	$("#about_expand").hide(1000);
+	 	});
 	
 	$("#about_us").click(function(e) {
 		e.stopPropagation(); 
-	    $("#about_expand").show(1000);
+	    $("#about_expand").toggle(1000);
 	});
 	// end about ribbon code
 	
