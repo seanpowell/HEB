@@ -503,8 +503,9 @@ footer a:visited {
 }
 
 #share {
-	width: 30%;
-	float: right;	
+	float: right;
+	min-width: 350px;
+	padding:0 50px 50px 70px;
 }
 
 #share_text {
@@ -527,14 +528,26 @@ footer a:visited {
 	padding: 10px;
 }
 
+#preso video {
+	display: inline;
+	position: relative;
+	top: 30px;
+	left: 26px;
+	height: 415px;
+	width: 649px;
+	background-color: #000;
+}
+
 #comingsoon {
 	width:  450px;
 	position: relative;
-	top: 175px;
+	top: -220px;
 	left:  100px;
 	border: 3px dotted #aa0a18;
 	padding: 20px;
 	font-size: 16px;
+	color: white;
+	background-color: #000;	
 }
 
 .notes_images img {
