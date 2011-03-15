@@ -3,7 +3,7 @@ CACHE MANIFEST
 # Build .4.7
 
 CACHE:
-#index.html
+index.html
 /css/
 	960.css
 	colorbox.css
