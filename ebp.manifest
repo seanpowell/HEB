@@ -4,102 +4,11 @@ CACHE MANIFEST
 
 CACHE:
 index.html
-/css/
-	960.css
-	colorbox.css
-	handheld.css
-	style.css
-	text.css
-
-/images/
-	12_col.gif
-	about_out.png
-	about_rib.png
-	aka.png
-	background_3inch.png
-	bg_one.png
-	bg_one_bot.png
-	bg_three.png
-	bg_three_bot.png
-	bg_two.png
-	bg_two_bot.png
-	bill_ted.jpg
-	border.png
-	bot_sec.png
-	buzz.png
-	controls.png
-	desk_man.png
-	email.png
-	fb.png
-	first_sec.png
-	first_sec_bot.png
-	footer_main.png
-	footer_top.png
-	g_but_l.png
-	g_but_r.png
-	hotmail_color_black.jpg
-	hotmail_color_green.jpg
-	internet_explorer/
-		borderBottomCenter.png
-		borderBottomLeft.png
-		borderBottomRight.png
-		borderMiddleLeft.png
-		borderMiddleRight.png
-		borderTopCenter.png
-		borderTopLeft.png
-		borderTopRight.png
-	loading.gif
-	loading_background.png
-	mid_sec.png
-	mid_sec_bot.png
-	nav_elope.png
-	nav_velope.png
-	new_yahoo_link_right.jpg
-	new_yahoo_link_wrong.jpg
-	notepad.png
-	notes.png
-	orange.gif
-	overlay.png
-	proj.png
-	r_but_l.png
-	r_but_r.png
-	slider.png
-	spaceballs.jpg
-	stumble.png
-	twitter.png
-	yahoo_space_no.jpg
-	yahoo_space_yes.jpg
-/js/
-	libs/
-		dd_belatedpng.js
-		jquery-1.4.2.min.js
-		jquery.colorbox-min.js
-		jquery.mousewheel.min.js
-		modernizr-1.6.min.js
-		vertical.slider.js
-	mylibs/
-		animate.script.js
-	plugins.js
-	script.js
-/fonts/
-	museo_slab_500-webfont.eot
-	museo_slab_500-webfont.svg
-	museo_slab_500-webfont.ttf
-	museo_slab_500-webfont.woff
-/notes/
-	note1.html
-	note10.html
-	note11.html
-	note2.html
-	note3.html
-	note4.html
-	note5.html
-	note6.html
-	note7-entities.html
-	note7.html
-	note8.html
-	note9.html
-
+/css/*
+/images/*
+/js/*
+/fonts/*
+/notes/*
 version02.html
 
 FALLBACK:
