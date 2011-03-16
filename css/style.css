@@ -306,7 +306,7 @@ header a:hover {
 
 #one {background: url(../images/bg_one.png) repeat;}
 
-#mainpage {background: url(../images/desk_man.png) no-repeat; background-position: -40px; height: 730px;}
+#mainpage {background: url(../images/desk_man.png) no-repeat -70px 40px; height: 730px;}
 
 header {
 	background: transparent url(../images/nav_elope.png) no-repeat; 
@@ -353,8 +353,8 @@ header {
 
 #main_copy {
 	position: relative;
-	top: 325px;
-	left: 520px;
+	top: 375px;
+	left: 505px;
 	color: #ffffff;
 	font-size: 16px;
 	width: 335px;
@@ -364,10 +364,6 @@ header {
 
 #main_copy m {
 	color: #e3a63e;
-}
-
-section {
-	padding: 15px;
 }
 
 #dont {
@@ -398,7 +394,7 @@ section {
 	padding: 0 10px;
 }
 
-#scroll-pane { float:left; overflow: auto;width: 860px; height: 800px; position:relative; display:inline; margin-left: 25px; margin-right: auto;
+#scroll-pane { float:left; overflow: auto;width: 860px; height: 800px; position:relative; display:inline; margin-left: 25px; margin-right: 35px;
 }
 
 #scroll-content {position:absolute;
@@ -406,7 +402,7 @@ section {
 	left:0;
 }
 
-.scroll-content-item {height: 2760px;}
+.scroll-content-item {height: 2790px;}
 
 #slider-wrap{float:left;background-color:#5d6668;width:6px;}
 
