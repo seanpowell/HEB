@@ -256,10 +256,15 @@ body, li, div {
 
 li {
 	list-style-type: lower-roman;
-	margin: 0;
+	margin: .5em 0;
 	padding: 0;
 	opacity: 1;
 	list-style-position: inside;
+}
+
+/*reset hightlight li margin*/
+.highlight li {
+	margin: 0;
 }
 
 h1, h2, h3, h4 {
@@ -293,7 +298,7 @@ h4 {
 }
 
 p {
-	margin-bottom: 1em;
+	margin-bottom: 1em !important;
 }
 
 header a {
@@ -515,13 +520,16 @@ footer a:visited {
 	font-family: 'MuseoSlab500';
 	font-size: 16px;
 	padding: 10px;
-	500px;
 	overflow: hidden;
 }
 
 .notes .highlight {
-	width: 98% !important;
-	padding: 10px;
+	font-size: 13px;
+	width:  98% !important;
+}
+
+.notes {
+	min-height: 150px;
 }
 
 #preso video {
