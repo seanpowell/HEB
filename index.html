@@ -4,7 +4,7 @@
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js" manifest="ebp.manifest"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
 
@@ -73,10 +73,11 @@
          <div class="container_12" id="two_contain">
              <div class="grid_8"><h1><span style="color:#b8c2b9;">THE</span> <span style="color:black;">CODE</span></h1></div>
              <div class="grid_4" id="code-side">The meat of the project lies here in the Code section.  Feel free to copy and paste as necessary.  <strong>Double click on the code section</strong> for more information on each of the snippets (in a slip-n-slideshow format).</div>
-             <div id="double" class="grid_12">Double on Click Code for More Info <span class="tilde">~</span> Copy/Paste Friendly</div>  
+             <div id="double" class="grid_8 push_5">Double on Click Code for More Info <span class="tilde">~</span> Copy/Paste Friendly</div>  
              <section id="scroll-pane">
                  <div id="scroll-content">
                      <div class="scroll-content-item">
+<a href="ebp/email.html" title="email.html" alt="email.html">                         
 <code class="highlight">
     &lt;!-- ***************************************************
     ********************************************************
@@ -201,38 +202,18 @@
     &lt;/body&gt;
     &lt;/html&gt;
 </code>
+</a>
                         </div>
                         <!-- end scroll item-->
                     </div> 
                  <!-- end scroll-content -->
              </section>
              <!-- end scroll pane section -->
-             <div id="disqus" class="grid_8 push_1"><div id="disqus_thread"></div>
-              <script type="text/javascript">
-                  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                  var disqus_shortname = 'hebp'; // required: replace example with your forum shortname
-
-                  // The following are highly recommended additional parameters. Remove the slashes in front to use.
-                  var disqus_identifier = 'ebp';
-                  var disqus_url = 'http://htmlemailboilerplate.com';
-
-                  /* * * DON'T EDIT BELOW THIS LINE * * */
-                  (function() {
-                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                  })();
-              </script>
-              <noscript>Please enable JavaScript to view <a href="http://disqus.com/?ref_noscript">comments.</a></noscript>
-              </div>
-              <!-- end disqus comments -->
-               
          <div class="clearfix"></div>
          
          </div> 
         <!-- end container --> 
-        
-         
+       
          <footer id="f2">
              
          </footer>     
@@ -245,10 +226,10 @@
         </div>
         <div class="clearfix"></div>    
         <div id="preso" class="grid_9 push_1">
-            <video width="647"  autoplay preload>
+            <video width="647"  autoplay preload loop>
                 <source src="http://www.archive.org/download/CincinnatusSMPTEFilmLeader_Test_/FV003_512kb.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                <source src=".webm" type='video/webm; codecs="vp8, vorbis"'>
                 <source src="http://www.archive.org/download/CincinnatusSMPTEFilmLeader_Test_/FV003.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+                <source src=".webm" type='video/webm; codecs="vp8, vorbis"'>
             </video>             
             <div id="comingsoon">Coming Soon to the <a href="http://www.nten.org/ntc">11NTC</a> (and soon means Friday, March 18 @10:30am)
             </div>
@@ -260,8 +241,8 @@
         <div class="clearfix"></div>
        <div id="site_footer"></div>
         <footer>
-            <div id="site_footer_wrapper">
-            <div class="footer_text">
+            <div id="site_footer_wrapper" class="container_12">
+            <div class="footer_text" class="grid_4">
             <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></span>.</p>
             <p>Site beautification by <a href="http://www.behance.net/taejeong">Tae Design</a> and elbowed into submission by Sean Powell.  This site was built using the fab <a href="http://html5boilerplate.com">HTML5 Boilerplate from Paul Irish</a>, the ever easy-peasy <a href="http://www.jquery.com">Jquery</a>, and hoisted up to the clouds by <a href="http://rackspacecloud.com">Rackspace</a>.</p>
             <p>Only works on a moz/webkit browser that supports the html5 doctype.</p>
@@ -347,15 +328,16 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.min.js"%3E%3C/script%3E'))</script>
   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"></script>
-  <!-- Include jQuery Syntax Highlighter --> 
-  <script src="http://github.com/balupton/jquery-syntaxhighlighter/raw/master/scripts/jquery.syntaxhighlighter.min.js"></script>
-
-  <!-- Initialise jQuery Syntax Highlighter --> 
-  <script type="text/javascript">$.SyntaxHighlighter.init();</script>
+ 
   <script src="js/libs/jquery.colorbox-min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/libs/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/libs/vertical.slider.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/mylibs/animate.script.js" type="text/javascript" charset="utf-8"></script>
+  
+    <!-- Include jQuery Syntax Highlighter --> 
+    <script src="http://github.com/balupton/jquery-syntaxhighlighter/raw/master/scripts/jquery.syntaxhighlighter.min.js"></script>
+    <!-- Initialise jQuery Syntax Highlighter --> 
+    <script type="text/javascript">$.SyntaxHighlighter.init();</script>
  
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>
