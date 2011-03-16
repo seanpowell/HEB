@@ -254,7 +254,7 @@ body, li, div {
 	font-family: 'MuseoSlab500';
 } 
 
-li {
+.notes li {
 	list-style-type: lower-roman;
 	margin: .5em 0;
 	padding: 0;
@@ -263,7 +263,7 @@ li {
 }
 
 /*reset hightlight li margin*/
-.highlight li {
+.notes .highlight li {
 	margin: 0;
 }
 
