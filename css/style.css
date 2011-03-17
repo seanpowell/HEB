@@ -397,6 +397,10 @@ header {
 	color: #d7cdd5;
 }
 
+#instruction {
+	font-size: 14px;
+}
+
 #double {
 	padding-bottom: 10px;
 	font-size: 16px;
