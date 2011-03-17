@@ -33,7 +33,7 @@
 	   	   **/
 		   
 		   p {
-		       margin: 0 0 1.12em 0;
+		       margin: 1em 0 1em 0;
 		   }
 		      
 		   /** 4. Hotmail header color reset: Hotmail replaces your header color styles with a green color on H2, H3, H4, H5, and H6 tags. In this example, the color is reset to black.  Replace black with your choice of color. The !important is really what is overriding Hotmail's styling. A SIDE NOTE: Hotmail sets the H1 and H2 tags to the same size. 
@@ -41,25 +41,76 @@
 		   INLINE: Yes.
 		   **/
 		   
-		   h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited, h4, h5, h6 {
-		       color: #a81415 !important;
-		       line-height: 100% !important;
-		   }
-		   
 		   h1 {
-			   color: #000 !important;
-			   line-height: 100% !important;
-		   }
-	       	       
-	       .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none; border-bottom: none; background: none;} /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+       	       font-size: 2em;
+       	       font-weight: bold;
+       	       margin: .67em 0;
+       	   }
+
+       	   h2 {
+       	       font-size: 1.5em;
+                  font-weight: bold;
+                  margin: .83em 0;
+       	   }
+
+       	   h3 {
+       	       font-size: 1.17em;
+                  font-weight: bold;
+                  margin: 1em 0;
+       	   }
+
+       	   h4 {
+       	       font-weight: bold;
+                  margin: 1.33em 0;
+       	   }
+
+       	   h5 {
+                  font-size: 0.83em;
+                  font-weight: bold;
+                  margin: 1.67em 0;
+            }
+
+            h6 {
+                  font-size: 0.67em;
+                  font-weight: bold;
+                  margin: 2.33em 0;
+              }
+
+       	      h1, h2, h3, h4, h5, h6 {
+          	       color: black !important;
+          	       line-height: 100% !important;
+          	   }
+
+               h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+      	       color: blue !important;
+      	   }
+
+      	   h1, h2, h3, h4, h5, h6 {
+       	       color: black !important;
+       	       line-height: 100% !important;
+       	   }
+
+       	   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+       	       color: blue !important;
+       	   }
+
+       	   h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+          	       color: red !important; /* Preferably not the same color as the normal header link color.  There is limited support for these psuedo classes in email clients. */
+          	   }
+
+       	   h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+       	       color: purple !important; /* Preferably not the same color as the normal header link color. There is limited support for these psuedo classes in email clients.*/
+       	   }
+       	   
+	       .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none !important; border-bottom: none !important; background: none !important;} /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
 		   
 		   
 		</style></head>
 <body>    
 	<!-- wrapper table begin   -->
-    <table cellpadding="25" cellspacing="0" border="0" id="backgroundTable">
+    <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
     <tr>
-    <td bgcolor="#666666">
+    <td bgcolor="#666666" style="padding: 25px 25px;">
 	<!-- content table begin   -->
     <table cellpadding="10" cellspacing="0" border="0" align="center">
     <tr>
@@ -72,7 +123,7 @@
     <h2>Checking link color</h2>    
     <p><a href="http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html" style="color:red; text-decoration:none;" target ="_blank" title="Feeling Blue Over Yahoo"><span style="color:red;">Here is another fix for Yahoo from Responsys/Smith Harmon</span></a></p>
     
-    <h2>Checking two images on top of each other</h2>    
+    <h2><a href="http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html" style="color:red; text-decoration:none;" target ="_blank" title="Feeling Blue Over Yahoo"><span style="color:red;">Checking two images on top of each other</span></a></h2>    
     <table cellpadding="0" cellspacing="0" border="0">
     <tr>
     <td width="200" bgcolor="black">
@@ -103,6 +154,7 @@
         <tr><td width="350"><a href="http://premailer.dialect.ca/">For help with bringing your styling inline...</a></td><td></td></tr>
             <tr><td width="350"><a href="http://www.intuitive.com/coolweb/entities.html" title="Character Entities" target="_blank">Here is a listing of character entities for easy reference...</a></td><td></td></tr>
             <tr><td width="350"><a href="http://emailonacid.com">Email on Acid Inbox Testing Service</a></td><td></td></tr>
+            <tr><td width="350">March 30, 2011</td></tr>
         </tbody>
     </table>  
     <!-- end of resources table -->

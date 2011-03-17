@@ -384,6 +384,19 @@ header {
 	
 }
 
+#download, #download a {
+	color: #fff;
+	font-size: 18px;
+	text-shadow: #050505 1px 1px 10px;
+	text-align: left;
+	margin: 10px 0;
+	text-decoration: none;
+}
+
+#download a:hover {
+	color: #d7cdd5;
+}
+
 #double {
 	padding-bottom: 10px;
 	font-size: 16px;
@@ -472,6 +485,7 @@ pre div {
 #site_footer {
 	background: transparent url(../images/bg_three_bot.png) repeat-x;
 	height: 91px;
+	
 }
 
 #site_footer_wrapper {
@@ -479,6 +493,8 @@ pre div {
 	display: block;
 	float: left;
 	width: 100%;
+	position: relative;
+	z-index: 4000;
 }
 
 .footer_text {
