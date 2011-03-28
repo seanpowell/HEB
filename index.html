@@ -19,18 +19,12 @@
   <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-
-  <!-- CSS : implied media="all" -->
-  <!-- <link rel="stylesheet" href="css/style.css?v=2"> -->
   
   <link rel="stylesheet" href="css/text.css">
   <link rel="stylesheet" href="css/960.css"> 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/colorbox.css">
-
-  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
-  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">
 
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-1.6.min.js"></script>
@@ -250,7 +244,7 @@
                     <div id="share_images">
                         <a href="mailto:?subject=HTMLEmailBoilerplate.com"><img src="images/email.png" width="48" height="43" alt="Email" />
                         <a href="http://www.facebook.com/sharer.php?u=http://htmlemailboilerplate.com&appid=2309869772"><img src="images/fb.png" width="41" height="43" alt="Fb" /></a>
-                        <a href="http://twitter.com/share?url=http://goo.gl/OjQX1&text=Chiggety check out the HTML Email Boilerplate via @seanpowell" class="twitter-share-button" data-url="http://htmlemailboilerplate.com" data-count="vertical" data-via="seanpowell"><img src="images/twitter.png" width="42" height="43" alt="Twitter" /></a>
+                        <a href="http://twitter.com/share?url=http://goo.gl/OjQX1&text=Chiggety check out the HTML Email Boilerplate (#ebp) via @seanpowell" class="twitter-share-button" data-url="http://htmlemailboilerplate.com" data-count="vertical" data-via="seanpowell"><img src="images/twitter.png" width="42" height="43" alt="Twitter" /></a>
                         <a href="http://www.stumbleupon.com/submit?url=http://htmlemailboilerplate.com"><img src="images/stumble.png" width="40" height="43" alt="Stumble" /></a>
                         <a href="http://www.google.com/buzz/post?url=http://htmlemailboilerplate.com&title=Chiggety check out the HTML Email Boilerplate"><img src="images/buzz.png" width="46" height="43" alt="Buzz" /></a>
                     </div>
@@ -333,6 +327,25 @@
     <script src="http://github.com/balupton/jquery-syntaxhighlighter/raw/master/scripts/jquery.syntaxhighlighter.min.js"></script>
     <!-- Initialise jQuery Syntax Highlighter --> 
     <script type="text/javascript">$.SyntaxHighlighter.init();</script>
+    
+    <!-- Get Satisfaction Script -->
+    <script type="text/javascript" charset="utf-8">
+      var is_ssl = ("https:" == document.location.protocol);
+      var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+      document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript" charset="utf-8">
+      var feedback_widget_options = {};
+
+      feedback_widget_options.display = "overlay";  
+      feedback_widget_options.company = "ebp";
+      feedback_widget_options.placement = "left";
+      feedback_widget_options.color = "#222";
+      feedback_widget_options.style = "idea";
+      var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+    </script>
+    <!-- end get satisfaction -->
  
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>
