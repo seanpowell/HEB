@@ -1,3 +1,5 @@
+/* @override http://localhost/email/css/style.css?v=2 */
+
 /* @override http://htmlemailboilerplate.com/css/style.css?v=2 */
 
 /* @override http://localhost/emailv2/css/style.css?v=2 */
@@ -266,19 +268,24 @@ header {
 	font-size: 14px;
 }
 
-#double {
-	padding-bottom: 10px;
+div#double-click {
+	display: inline-block;
+	width: 300px;
+	margin-left: 80px;
+	margin-top: 5px;
+	text-align: center;
+	opacity: 0.8;	
+}
+
+div#double-click span {
+	border: 2px dashed #fff;
+	padding: 5px;
 	font-size: 16px;
 	color: #fff;
 	text-shadow: #050505 1px 1px 10px;
 	font-style: italic;
-	text-align: left;
-	margin-left: -10px;
-}
-
-#double span {
-	font-size: 22px;
-	padding: 0 10px;
+	
+	background-color: #e84da0;
 }
 
 #code_wrapper {
@@ -427,10 +434,11 @@ footer a:visited {
 #m_share_images {
 	display: inline;
 	float: left;
-	width: 40%;
+	width: 20%;
 }
 
 #facebook {
+	vertical-align: middle;
 	float: right;
 	padding-top: 10px;
 	margin-right: 70px;

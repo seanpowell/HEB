@@ -20,4 +20,9 @@ $(document).ready(function() {
 	    $("#about_expand").toggle(1000);
 	});
 	// end about ribbon code
+	
+	$("#code_wrapper").hover(
+	    function() { $("#double-click span").css("display","inline-block")},
+	    function() { $("#double-click span").css("display","none")}
+	);
 });
