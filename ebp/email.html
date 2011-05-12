@@ -93,13 +93,24 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
     <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
     <tr>
     <td> 
-               
+    <!-- centers the message, duh!     -->
+    <center>           
     <!-- 6. Tables are the most common way to format your email consistently. Set your table widths inside cells and in most cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. -->
     
     <table cellpadding="0" cellspacing="0" border="0">
         <tr>
             <td width="300"></td>
+            <td width="300"><h1>HTML Email Boilerplate</h1></td>
             <td width="300"></td>
+        </tr>
+        <tr>
+            <td width="300"></td>
+            <td width="300"><h3>Yahoo link fix</h3></td>
+            <td width="300"></td>
+        </tr>
+        <tr>
+            <td width="300"></td>
+            <td width="300"><h3>Gmail/Hotmail image display fix</h3></td>
             <td width="300"></td>
         </tr>
     </table>  
@@ -113,10 +124,10 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
     <!-- 8. Gmail/Hotmail image display fix: Gmail and Hotmail unwantedly adds in an extra space below images when using non IE browsers.  This can be especially painful when you putting images on top of each other or putting back together an image you spliced for formatting reasons.  Either way, you can add 'style="display: block;"' to remove that space below the image.  Make sure to set alignment (don't use float) on your images if you are placing them inline with text.-->
     
     <img src="full path to image" alt="Your alt text" title="Your title text" width="x" height="x" style="display:block;" />
-    
+    </center>
     </td>
     </tr>
     </table>  
-    <!-- End of wrapper table -->
+    <!-- End of wrapper table -->   
 </body>
 </html>

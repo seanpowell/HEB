@@ -1,35 +1,41 @@
-<!doctype html>  
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!doctype html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-
-  <title>HTML EMAIL BOILERPLATE v 0.4 updated 3/17</title>
-  <meta name="description" content="HTML Email Boilerplate website.">
-  <meta name="author" content="Sean Powell">
-  <meta name="google-site-verification" content="-ykgQegBJk9bp5UuZzTfm1R71hdsEDlO_iBuabMpi0I" />
-
-  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
-  <link rel="stylesheet" href="css/text.css">
-  <link rel="stylesheet" href="css/960.css"> 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/colorbox.css">
-  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">
-
-  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="js/libs/modernizr-1.6.min.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>HTML EMAIL BOILERPLATE v 0.5 updated 5/12</title>
+	<meta name="description" content="HTML Email Boilerplate website.">
+	<meta name="author" content="Sean Powell">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta name="google-site-verification" content="-ykgQegBJk9bp5UuZzTfm1R71hdsEDlO_iBuabMpi0I" />
+	
+	<!-- Added/External stylesheets  -->
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/960.css">
+    <link rel="stylesheet" href="css/shCore.css">
+    <link rel="stylesheet" href="css/shThemeRDark.css">
+    
+    <!-- Site specific stylesheets -->
+    <link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="stylesheet" href="css/style.css?v=2">
+	<link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">
+	<link rel="stylesheet" href="css/colorbox.css">
+    
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+      <script src="js/libs/modernizr-1.6.min.js"></script>
 </head>
-
 <body>   
 <div id="site_container">     
    <section id="one">
@@ -50,7 +56,7 @@
         <div id="mainpage">
             <div id ="main_copy" class="grid_5 push_7">
                 Welcome to the HTML <em>Email</em> Boilerplate. This website and <a href="#f1">its sample code</a>
-                 creates a template of sorts, absent of design or layout, that will help you avoid some of the major rendering problems with the most common email clients out there &mdash; Gmail, Outlook, Yahoo Mail, etc. <m>While not plug and play (you know, you'll have to do some work ;-), it will provide some helpful examples and snippets that will keep your email design rendering as true-to-form as possible.</m>
+                 creates a template of sorts, absent of design or layout, that will help you avoid some of the major rendering problems with the most common email clients out there &amp;mdash; Gmail, Outlook, Yahoo Mail, etc. <m>While not plug and play (you know, you'll have to do some work ;-), it will provide some helpful examples and snippets that will keep your email design rendering as true-to-form as possible.</m>
             </div>
             <!-- .grid_5 push_4 -->
         </div>    
@@ -64,16 +70,16 @@
      <!-- end one -->
      
      <div class="clearfix"></div> 
-     <a href="http://github.com/seanpowell/Email-Boilerplate"><img style="position: relative; top: -50px; left: 0; border: 0; float: left; display: inline;" src="https://assets1.github.com/img/ce742187c818c67d98af16f96ed21c00160c234a?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_left_gray_6d6d6d.png&path=" alt="Fork me on GitHub"></a>  
+     <a href="http://github.com/seanpowell/Email-Boilerplate"><img style="position: relative; top: -50px; left: 0; border: 0; float: left; display: inline;" src="https://assets1.github.com/img/ce742187c818c67d98af16f96ed21c00160c234a?repo=&amp;url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_left_gray_6d6d6d.png&amp;path=" alt="Fork me on GitHub"></a>  
      <section id="two">
-         <div class="container_12" id="two_contain">
+         <div class="container_12 two_contain">
              <div class="grid_8"><h1><span style="color:#b8c2b9;">THE</span> <span style="color:black;">CODE</span></h1></div>
              <div class="grid_4" id="code-side">The meat of the project lies here in the Code section.  Feel free to copy and paste as necessary.  <strong>Double click on the code section</strong> for more information on each of the snippets (in a slip-n-slideshow format).</div>
-             <div id="download" class="grid_4 pull_4"><span class="tilde">~</span> <a href="https://github.com/seanpowell/Email-Boilerplate/zipball/master" title"Download the HTML Email Boilerplate">Download the Boilerplate</a> <span class="tilde">~</span><br /><span id="instruction">(includes an instruction-less version)</span></div>  
-             <div id="scroll-pane">
-                 <div id="scroll-content">
-                     <div class="scroll-content-item">                        
-<code class="highlight">
+             <div id="download" class="grid_4 pull_4"><span class="tilde">~</span> <a href="https://github.com/seanpowell/Email-Boilerplate/zipball/master" title="Download the HTML Email Boilerplate">Download the Boilerplate</a> <span class="tilde">~</span><br /><span id="instruction">(includes an instruction-less version)</span></div>
+        </div>                            
+<div class="clearfix"></div>
+<div id="code_wrapper">
+<pre class="brush: html, first-line: 1; smart-tabs: true">
     &lt;!-- ***************************************************
     ********************************************************
 
@@ -91,7 +97,8 @@
     Campaign Monitor - http://www.campaignmonitor.com/blog/post/3317/correct-doctype-to-use-in-html-email/
     Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_sheep_of_html_email_design
     --&gt;
-
+    </pre>
+    <pre class="brush: html, first-line: 18;">
     &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; 
 
@@ -100,7 +107,8 @@
     	&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
     	&lt;title&gt;Your Message Subject or Title&lt;/title&gt;
     	&lt;style type="text/css"&gt;
-
+    </pre>
+    <pre class="brush: css, first-line: 26">
     	/***********
     	 2. The MailChimp Reset from Fabio Carneiro, MailChimp User Experience Design
          More info and templates on Github: https://github.com/mailchimp/Email-Blueprints
@@ -152,7 +160,7 @@
     	       color: purple !important; /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
     	   }
 
-           /** BONUS: Adaptation of Brian Thies (Campaign Monitor) link color fix to render the Yahoo Short Cuts invisible. Yahoo short cuts are links that Yahoo places over certain text in your email without your knowledge.  In order to use this fix you need to make the text color the same of the actual font color of your email and reset a few elements. IMPORTANT: You then need to use the Responsys/Smith Harmon link color fix (#4) if you want to style your links to the color you want them to be.  If you don't, this fix will change all links to black in Yahoo.  
+           /** BONUS: Adaptation of Brian Thies (Campaign Monitor) link color fix to render the Yahoo Short Cuts invisible. Yahoo short cuts are links that Yahoo places over certain text in your email without your knowledge.  In order to use this fix you need to make the text color the same of the actual font color of your email and reset a few elements. IMPORTANT: You then need to use the Responsys/Smith Harmon link color fix (#7) if you want to style your links to the color you want them to be.  If you don't, this fix will change all links to black in Yahoo.  
 
            If you are not worried about Yahoo's shorcuts, just remove this code.  This is not applicable for Yahoo Classic. 
 
@@ -160,7 +168,8 @@
            **/
 
            .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none !important; border-bottom: none !important; background: none !important;} /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
-
+    </pre>
+    <pre class="brush: html, first-line:85">
            &lt;/style&gt;
     &lt;/head&gt;
     &lt;body&gt;
@@ -196,18 +205,11 @@
         &lt;!-- End of wrapper table --&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-</code>
-                        </div>
-                        <!-- end scroll item-->
-                    </div> 
-                 <!-- end scroll-content -->
-             </div>
-             <!-- end scroll pane section -->
-             <div id="double" class="grid_8 push_5">Double Click on Code for More Info <span class="tilde">~</span> Copy/Paste Friendly</div>  
-         <div class="clearfix"></div>
-         
-         </div> 
-        <!-- end container --> 
+</pre>
+</div>
+<!-- end code wrapper -->
+<div class="clearfix"></div>
+
        
          <footer id="f2">
              
@@ -217,14 +219,15 @@
     <section id="three">  
         <div class="container_12">
         <h2 class="grid_12"><span style="color:#b8c2b9;">Email Design</span> <span style="color:black;">Workshop</span></h2>
-        <div class="grid_2"><img src="images/aka.png" style="float:right;" alt="AKA" /></div><div class="grid_10" id="dont">Don’t Let Bad Email Code Ruin Your Day or Your Results
+        <div class="grid_2"><img src="images/aka.png" style="float:right;" alt="AKA" /></div>
+        <div class="grid_10" id="dont">Don’t Let Bad Email Code Ruin Your Day or Your Results
         </div>
         <div class="clearfix"></div>    
         <div id="preso" class="grid_9 push_1">
-            <div style="width:425px; position: relative; top: 50px; left: 140px;" id="__ss_7277548"><object id="__sse7277548" width="425" height="355"> <param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=11ntcemailpresentationv2-110315210621-phpapp01&rel=0&stripped_title=email-workshop-powell&userName=theengagegroup" /> <param name="allowFullScreen" value="true"/> <param name="allowScriptAccess" value="always"/> <embed name="__sse7277548" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=11ntcemailpresentationv2-110315210621-phpapp01&rel=0&stripped_title=email-workshop-powell&userName=theengagegroup" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed> </object></div>
+            <div style="width:425px; position: relative; top: 50px; left: 140px; z-index:0;" id="__ss_7277548"><object id="__sse7277548" width="425" height="355"> <param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=11ntcemailpresentationv2-110315210621-phpapp01&amp;rel=0&amp;stripped_title=email-workshop-powell&amp;userName=theengagegroup" /> <param name="allowFullScreen" value="true"/> <param name="allowScriptAccess" value="always"/> <embed wmode="normal" name="__sse7277548" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=11ntcemailpresentationv2-110315210621-phpapp01&amp;rel=0&amp;stripped_title=email-workshop-powell&amp;userName=theengagegroup" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed> </object></div>
         </div>
         <!-- end preso -->
-        
+
         </div>
        <!-- end container -->
         <div class="clearfix"></div>
@@ -240,7 +243,7 @@
             </div>
             <!-- end footer_text -->
             <div id="share">
-                <div id="share_text">The good stuff:</div>
+                <div id="share_text">Sharing is caring:</div>
                     <div id="share_images">
                         <a href="mailto:?subject=HTMLEmailBoilerplate.com"><img src="images/email.png" width="48" height="43" alt="Email" />
                         <a href="http://www.facebook.com/sharer.php?u=http://htmlemailboilerplate.com&appid=2309869772"><img src="images/fb.png" width="41" height="43" alt="Fb" /></a>
@@ -265,13 +268,38 @@
         <!-- end site footer -->
     </section>
     <!-- end three   -->
+    <section id="four">
+        <footer class="clearfix">
+            <div id="m_share">
+                <div id="m_share_text">Help a website out:</div>
+                    <div id="m_share_images">
+                        <a href="mailto:?subject=HTMLEmailBoilerplate.com"><img src="images/email.png" width="48" height="43" alt="Email" /></a>
+                        <a href="http://www.facebook.com/sharer.php?u=http://htmlemailboilerplate.com&amp;appid=2309869772"><img src="images/fb.png" width="41" height="43" alt="Fb" /></a>
+                        <a href="http://twitter.com/share?url=http://goo.gl/OjQX1&amp;text=Chiggety check out the HTML Email Boilerplate (#ebp) via @seanpowell" class="twitter-share-button" data-url="http://htmlemailboilerplate.com" data-count="vertical" data-via="seanpowell"><img src="images/twitter.png" width="42" height="43" alt="Twitter" /></a>
+                        <a href="http://www.stumbleupon.com/submit?url=http://htmlemailboilerplate.com"><img src="images/stumble.png" width="40" height="43" alt="Stumble" /></a>
+                        <a href="http://www.google.com/buzz/post?url=http://htmlemailboilerplate.com&amp;title=Chiggety check out the HTML Email Boilerplate"><img src="images/buzz.png" width="46" height="43" alt="Buzz" /></a>
+                    </div>
+                    <div id="facebook"><iframe src="http://www.facebook.com/plugins/like.php?href=htmlemailboilerplate.com&amp;amp;layout=standard&amp;amp;show_faces=false&amp;amp;width=450&amp;amp;action=like&amp;amp;font=verdana&amp;amp;colorscheme=light&amp;amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
+                    </div>    
+                     <!-- end fb like -->
+                     <div id="html5">
+                     <a href="http://www.w3.org/html/logo/">
+                     <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-multimedia-semantics-storage.png" width="229" height="64" alt="HTML5 Powered with CSS3 / Styling, Multimedia, Semantics, and Offline &amp;amp; Storage" title="HTML5 Powered with CSS3 / Styling, Multimedia, Semantics, and Offline &amp;amp; Storage">
+                     </a>
+            </div>
+            <!-- the end of sharing (hmmm) -->
+            </div>
+            <!-- end of footer wrapper -->
+        </footer>
+        <!-- end site footer -->
+        </section>
 </div>
 <!-- end site container -->
 
 <!-- About Us Ribbon -->
 <div id="about_us">
      <div id="about_rib"></div>
-     <div id="about_expand"><div class="about_copy">This site was created to put <strong>pen to paper some of our (and our friends') experiences when it comes to rendering html email</strong>.  We thought, hey, how great would it be to use a cool new technology, like HTML5, to showcase some of the pitfalls of an older (rendering-wise) technology &mdash; in this case, email clients like Outlook, Gmail, Hotmail, etc.</div>  
+     <div id="about_expand"><div class="about_copy">This site was created to put <strong>pen to paper some of our (and our friends') experiences when it comes to rendering html email</strong>.  We thought, hey, how great would it be to use a cool new technology, like HTML5, to showcase some of the pitfalls of an older (rendering-wise) technology &amp;mdash; in this case, email clients like Outlook, Gmail, Hotmail, etc.</div>  
      <div class="about_copy">We also thought, hey (which is for horses and sometimes cows), why don't we use <a href="http://html5boilerplate.com">Paul Irish's HTML5 Boilerplate</a> (thanks for the inspiration Paul) as our starting point.  And after a little jquery love, 960 peace, and html5 grease; this site came to be.</div>
      <div class="about_copy">@SeanPowell<br />
      </div>
@@ -310,23 +338,32 @@
 
 </section>
 <!-- end hidden content -->
-
-  <!-- Javascript at the bottom for fast page loading -->
-
-  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.min.js"%3E%3C/script%3E'))</script>
-  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"></script>
  
-  <script src="js/libs/jquery.colorbox-min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/libs/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/libs/vertical.slider.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/mylibs/animate.script.js" type="text/javascript" charset="utf-8"></script>
-  
-    <!-- Include jQuery Syntax Highlighter --> 
-    <script src="http://github.com/balupton/jquery-syntaxhighlighter/raw/master/scripts/jquery.syntaxhighlighter.min.js"></script>
-    <!-- Initialise jQuery Syntax Highlighter --> 
-    <script type="text/javascript">$.SyntaxHighlighter.init();</script>
+ 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/libs/jquery.colorbox-min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/shCore.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/shBrushXml.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/shBrushCss.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/shBrushPlain.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+         SyntaxHighlighter.all()
+    </script>
+    
+    <script src="js/mylibs/animate.script.js" type="text/javascript" charset="utf-8"></script>
+    <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg');</script>
+    <![endif]-->
+    <script>
+    	var _gaq=[['_setAccount','UA-4466412-5'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
     
     <!-- Get Satisfaction Script -->
     <script type="text/javascript" charset="utf-8">
@@ -346,29 +383,6 @@
       var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
     </script>
     <!-- end get satisfaction -->
- 
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-  <!-- end concatenated and minified scripts-->
-  
-  <!--[if lt IE 7 ]>
-    <script src="js/libs/dd_belatedpng.js"></script>
-    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
-  <![endif]-->
-
-  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
-       change the UA-XXXXX-X to be your site's ID -->
-  <script>
-   var _gaq = [['_setAccount', 'UA-4466412-5'], ['_trackPageview']];
-   (function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.async = true;
-    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g, s);
-   })(document, 'script');
-  </script>
   
 </body>
 </html>

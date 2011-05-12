@@ -1,27 +1,3 @@
-/* Author: Sean Powell 
+$(function(){
 
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});

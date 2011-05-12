@@ -6,7 +6,7 @@ $(document).ready(function() {
 	}
 	
 	//Colorbox lightbox slideshow functionality
-	$("#scroll-pane").dblclick(function(){
+	$("#code_wrapper").dblclick(function(){
 		$("a[rel='notes']").colorbox({open:true,slideshow:true, slideshowAuto: false, slideshowSpeed: 2500, current: "example {current} of {total}", width:"800px", returnFocus:true});
 	});
 	
@@ -20,5 +20,4 @@ $(document).ready(function() {
 	    $("#about_expand").toggle(1000);
 	});
 	// end about ribbon code
-	
 });
