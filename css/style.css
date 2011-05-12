@@ -1,3 +1,5 @@
+/* @override http://htmlemailboilerplate.com/css/style.css?v=2 */
+
 /* @override http://localhost/emailv2/css/style.css?v=2 */
 
 /* ==== Scroll down to find where to put your styles :) ==== */
@@ -380,10 +382,9 @@ section#four {
 	margin-bottom: -50px;
 }
 
-.footer_text {
+div.footer_text {
 	float: left;
-	display: none;
-	width: 50%;
+	width: 40%;
 	padding: 0 50px 50px 70px;
 	color: #c3cbcd;
 }
@@ -405,7 +406,7 @@ footer a:visited {
 #share {
 	float: right;
 	min-width: 450px;
-	padding:0 50px 50px 70px;
+	margin:0 50px 50px 70px;
 }
 
 #share_text {
