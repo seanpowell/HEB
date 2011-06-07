@@ -1,8 +1,8 @@
-/* @override http://localhost/email/css/style.css?v=2 */
-
-/* @override http://htmlemailboilerplate.com/css/style.css?v=2 */
-
-/* @override http://localhost/emailv2/css/style.css?v=2 */
+/* @override 
+	http://localhost/email/css/style.css?v=2
+	http://htmlemailboilerplate.com/css/style.css?v=2
+	http://localhost/emailv2/css/style.css?v=2
+*/
 
 /* ==== Scroll down to find where to put your styles :) ==== */
 
@@ -112,7 +112,6 @@ a:hover { color: #036; }
 
 /* Override 960 gs for a few outliers */
 body {
-	min-width: 1300px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -248,16 +247,17 @@ header {
 	color: #e0e2e3;
 	line-height: 20px;
 	margin-top: 20px;
-	
 }
 
 #download, #download a {
 	color: #fff;
 	font-size: 18px;
 	text-shadow: #050505 1px 1px 10px;
-	text-align: left;
-	margin: 10px 0;
+	text-align: center;
+	margin: 10px auto;
 	text-decoration: none;
+	clear: both;
+	
 }
 
 #download a:hover {
@@ -411,9 +411,13 @@ footer a:visited {
 }
 
 #share {
-	float: right;
-	min-width: 450px;
+	float: left;
+	min-width: 40%px;
 	margin:0 50px 50px 70px;
+}
+
+#share_images {
+	min-width: 400px;
 }
 
 #share_text {
@@ -438,13 +442,13 @@ footer a:visited {
 }
 
 #facebook {
-	vertical-align: middle;
+	/vertical-align: middle;
 	float: right;
 	padding-top: 10px;
-	margin-right: 70px;
-	display: inline !important;
-	height: 25px;
-	overflow: hidden;
+	/margin-right: ;
+	/display: inline !important;
+	/height: 25px;
+	/overflow: hidden;
 }
 
 #m_share_text {
