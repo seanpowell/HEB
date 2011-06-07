@@ -347,7 +347,7 @@ code.number:hover {
 	position: relative;
 	left: 150px;
 	top: 25px;
-	width: 67%;
+	width: 69%;
 	margin-bottom: 1em;
 	line-height: 1.5;
 }
@@ -411,7 +411,7 @@ footer a:visited {
 }
 
 #share {
-	float: left;
+	float: right;
 	min-width: 40%px;
 	margin:0 50px 50px 70px;
 }
@@ -442,13 +442,12 @@ footer a:visited {
 }
 
 #facebook {
-	/vertical-align: middle;
 	float: right;
 	padding-top: 10px;
-	/margin-right: ;
-	/display: inline !important;
-	/height: 25px;
-	/overflow: hidden;
+	margin-right: 40px;
+	display: inline !important;
+	height: 25px;
+	overflow: hidden;
 }
 
 #m_share_text {
