@@ -442,7 +442,7 @@ footer a:visited {
 }
 
 #facebook {
-	float: right;
+	float: left;
 	padding-top: 10px;
 	margin-right: 40px;
 	display: inline !important;
