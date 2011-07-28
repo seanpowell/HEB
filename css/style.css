@@ -560,6 +560,10 @@ footer a:visited {
 
 
 @media all and (orientation:portrait) {
+	
+	body{max-width:760px}
+	
+	
 	#about_us {
 	display: none;
 	}
