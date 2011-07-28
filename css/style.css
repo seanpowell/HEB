@@ -560,10 +560,27 @@ footer a:visited {
 
 
 @media all and (orientation:portrait) {
+	#about_us {
+	display: none;
+	}
+	
+	#about_rib {
+	display: none;
+	}	
+}
 
 }
 
 @media all and (orientation:landscape) {
+	
+	#about_us {
+	display: none;
+	}
+	
+	#about_rib {
+	display: none;
+	}	
+
 
 }
 
