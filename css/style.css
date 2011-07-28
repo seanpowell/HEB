@@ -567,6 +567,11 @@ footer a:visited {
 	#about_rib {
 	display: none;
 	}	
+	
+	#four {
+	display: none;
+	}
+	
 }
 
 }
