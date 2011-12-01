@@ -120,6 +120,11 @@ body, li, div {
 	font-family: 'MuseoSlab500';
 } 
 
+.highlight {
+	background: white;
+	margin-bottom: 30px;
+}
+
 .notes li {
 	list-style-type: lower-roman;
 	margin: .5em 0;
@@ -559,7 +564,7 @@ footer a:visited {
 .clearfix { zoom: 1; }
 
 
-@media all and (orientation:portrait) {
+/*@media all and (orientation:portrait) {
 	
 	body{max-width:760px}
 	
@@ -589,7 +594,7 @@ footer a:visited {
 	}	
 
 
-}
+}*/
 
 @media screen and (max-device-width: 480px) {
 
