@@ -358,6 +358,24 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
             &lt;/tr&gt;
         &lt;/table&gt;  
         </code>
+        <div class="feature-text"><h4>Resetting the mood</h4><p>A great reset based on one from the good folks over at Mail Chimp. This snippet resets formatting issues with several clients including Outlook, Hotmail, and Gmail. It also includes a sweet fix for some smart phone clients where font sizes are increased to break your layout.</p></div>
+        <code class="highlight">   
+        /* Client-specific Styles */
+        #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+        body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;} 
+        /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */ 
+        .ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */  
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */ 
+        #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+        /* End reset */
+        ...
+        </code>
+        <div class="feature-text"><h4>Yahooligans is right</h4><p>The boilerplate fixes an issue with the Yahoo Email client where standard paragraph spacing is not applied (most likely due to a reset of some sort). Make sure you bring this sucker inline.</p></div>  
+        <code class="highlight">   
+        p {
+            margin: 1em 0;
+        }
+        </code>
         <div class="clearfix"></div>    
         </div>
        <!-- end container -->
