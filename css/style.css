@@ -122,7 +122,7 @@ body, li, div {
 
 .highlight {
 	background: white;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 .notes li {
@@ -318,6 +318,16 @@ div.lines {
 
 code.number:hover {
 	color: #e3a63e !important;
+}
+
+.feature-text h4 {
+	font-size: 2em;
+	color: ghostwhite;
+}
+
+.feature-text p {
+	font-size: 1.2em;
+	
 }
 
 #about_us {
